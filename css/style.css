@@ -745,7 +745,7 @@ table {
   color: #002485;
 }
 .header-navbar-link .ic-down {
-  top: 0;
+  top: 2px;
   right: -35px;
   padding: 8px;
   display: block;
@@ -2427,6 +2427,9 @@ table {
 .footer-box-mail > a:hover {
   color: #174ae6;
 }
+.footer-box-mail > a > span {
+  color: #1665d8;
+}
 .footer-box-mail > a > img {
   padding-right: 8px;
   max-width: 1.7775rem;
@@ -2505,6 +2508,7 @@ table {
 }
 .footer-box-bottom .footer-box-col:nth-child(1) > ul > li img {
   max-width: 138px;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .footer-box-bottom .footer-box-col:nth-child(1) > ul > li img {
@@ -5263,6 +5267,12 @@ input::-webkit-input-placeholder {
   border: 1px solid #d9d9d9;
   border-radius: 6px;
 }
+.tablist-pagination .pagination-list-item > li > a.selected {
+  color: #fff;
+}
+.tablist-pagination .pagination-list-item > li > a.selected::before {
+  display: none;
+}
 @media screen and (max-width: 700px) {
   .tablist-pagination .pagination-list-item > li {
     padding: 4px 8px;
@@ -5307,7 +5317,7 @@ input::-webkit-input-placeholder {
   background: linear-gradient(0deg, #ffffff 0%, #f1f6ff 100%, #eff5ff 100%);
 }
 .contact-inner {
-  padding-top: 140px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 @media screen and (max-width: 1023px) {
@@ -5341,7 +5351,7 @@ input::-webkit-input-placeholder {
 .contact-inner .contact-title > h3 {
   color: #2f281e;
   font-size: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 @media screen and (max-width: 450px) {
   .contact-inner .contact-title > h3 {
@@ -5509,15 +5519,13 @@ input::-webkit-input-placeholder {
   }
 }
 .contact-inner .contact-row-col .contact-form {
-  padding: 20px;
-  padding-right: 30px;
+  padding: 25px;
   background: #fff;
   border-radius: 10px;
 }
 .contact-inner .contact-row-col .contact-form .form-title > p {
   font-size: 20px;
   padding-bottom: 30px;
-  padding-top: 15px;
 }
 @media screen and (max-width: 450px) {
   .contact-inner .contact-row-col .contact-form .form-title > p {
@@ -5571,6 +5579,7 @@ input::-webkit-input-placeholder {
   border-radius: 4px;
   padding: 6px 15px;
   font-size: 16px;
+  margin-top: 8px;
   border: 0.8px solid #e8e8e8;
 }
 .contact-inner .contact-row-col .contact-rapcha {
@@ -5581,6 +5590,8 @@ input::-webkit-input-placeholder {
 .contact-inner .contact-row-col .contact-send {
   padding: 20px;
   padding-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: #fff;
 }
 .contact-inner .contact-row-col .contact-send > a {

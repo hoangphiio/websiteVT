@@ -1,7 +1,7 @@
 .contact {
   background: linear-gradient(0deg, #ffffff 0%, #f1f6ff 100%, #eff5ff 100%);
   &-inner {
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 120px;
     @include max(1023px) {
       padding-bottom: 50px;
@@ -23,7 +23,7 @@
       > h3 {
         color: #2f281e;
         font-size: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         @include max(450px) {
           font-size: 22px;
         }
@@ -144,15 +144,13 @@
           }
         }
         & .contact-form {
-          padding: 20px;
-          padding-right: 30px;
+          padding: 25px;
           background: #fff;
           border-radius: 10px;
           & .form-title {
             > p {
               font-size: 20px;
               padding-bottom: 30px;
-              padding-top: 15px;
               @include max(450px) {
                 font-size: 16px;
               }
@@ -206,6 +204,7 @@
               border-radius: 4px;
               padding: 6px 15px;
               font-size: 16px;
+              margin-top: 8px;
               border: 0.8px solid #e8e8e8;
             }
           }
@@ -218,6 +217,8 @@
         & .contact-send {
           padding: 20px;
           padding-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
           background: #fff;
           > a {
             width: 100%;

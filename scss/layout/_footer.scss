@@ -69,10 +69,13 @@
         &:hover {
           color: $color-first;
         }
-      }
-      > a > img {
-        padding-right: 8px;
-        max-width: 1.7775rem;
+        > span {
+          color: #1665d8;
+        }
+        > img {
+          padding-right: 8px;
+          max-width: 1.7775rem;
+        }
       }
     }
     &-center {
@@ -139,6 +142,7 @@
             }
             & img {
               max-width: 138px;
+              height: auto;
               @include max(1024px) {
                 margin: auto;
               }
