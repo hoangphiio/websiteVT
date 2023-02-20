@@ -177,6 +177,9 @@
       li > ul > li {
         position: relative;
         padding-bottom: 35px;
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
       li > a {
         font-size: 14px;
