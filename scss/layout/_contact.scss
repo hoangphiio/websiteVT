@@ -1,0 +1,248 @@
+.contact {
+  background: linear-gradient(0deg, #ffffff 0%, #f1f6ff 100%, #eff5ff 100%);
+  &-inner {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    @include max(1023px) {
+      padding-bottom: 50px;
+    }
+    @include max(450px) {
+      padding-top: 120px;
+    }
+    & .contact-title {
+      margin-bottom: 40px;
+      @include max(1366) {
+        margin-bottom: 90px;
+      }
+      @include max(1280px) {
+        margin-bottom: 80px;
+      }
+      @include max(520px) {
+        margin-bottom: 50px;
+      }
+      > h3 {
+        color: #2f281e;
+        font-size: 30px;
+        padding-bottom: 20px;
+        @include max(450px) {
+          font-size: 22px;
+        }
+      }
+      > p {
+        color: #2f281e;
+        font-size: 18px;
+        @include max(450px) {
+          font-size: 14px;
+        }
+      }
+    }
+    & .contact-row {
+      @include flex();
+      @include max(1023px) {
+        flex-direction: column-reverse;
+      }
+      &-col {
+        width: 50%;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        @include max(1023px) {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        &:nth-child(1) {
+          margin-right: 15px;
+          overflow: hidden;
+          @include max(1023px) {
+            margin-right: 0;
+          }
+        }
+        &:nth-child(2) {
+          margin-left: 15px;
+          @include max(1023px) {
+            margin-left: 0;
+          }
+        }
+        & .contact-info {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background: #fffbef;
+          padding: 30px 30px 10px 30px;
+          border: 3px solid #fff;
+          & .info-hotline {
+            @include flex();
+            align-items: center;
+            @include max(520px) {
+              flex-wrap: wrap;
+              padding: 12px;
+            }
+            & .hotline-img {
+              @include flex();
+              align-items: center;
+              gap: 10px;
+              width: 20%;
+              margin-right: 8px;
+              @include max(520px) {
+                width: 100%;
+                justify-content: center;
+              }
+              > img {
+                max-width: 20px;
+              }
+            }
+            & .hotline-text {
+              width: 80%;
+              @include max(520px) {
+                width: 100%;
+                text-align: center;
+              }
+              > a:hover {
+                color: $color-first;
+              }
+            }
+          }
+          & .info-location {
+            @include flex();
+            align-items: center;
+            @include max(520px) {
+              flex-wrap: wrap;
+            }
+            & .location-img {
+              @include flex();
+              align-items: center;
+              gap: 10px;
+              width: 20%;
+              margin-right: 8px;
+              @include max(520px) {
+                width: 100%;
+                justify-content: center;
+              }
+              > img {
+                max-width: 20px;
+              }
+            }
+            & .location-address {
+              width: 80%;
+              line-height: 30px;
+              @include max(520px) {
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+        & .contact-map {
+          height: 100%;
+          display: block;
+          > iframe {
+            display: block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            @include max(1023px) {
+              height: 500px;
+            }
+          }
+        }
+        & .contact-form {
+          padding: 20px;
+          padding-right: 30px;
+          background: #fff;
+          border-radius: 10px;
+          & .form-title {
+            > p {
+              font-size: 20px;
+              padding-bottom: 30px;
+              padding-top: 15px;
+              @include max(450px) {
+                font-size: 16px;
+              }
+            }
+          }
+          & .form-input {
+            &:not(:last-child) {
+              padding-bottom: 20px;
+            }
+            > label {
+              @include max(450px) {
+                font-size: 14px;
+              }
+            }
+            > label > span {
+              color: red;
+            }
+            > input {
+              width: 100%;
+              padding: 8px 15px;
+              margin-top: 8px;
+              outline: 0;
+              border-radius: 4px;
+              font-size: 16px;
+              font-family: "Raleway";
+              border: 0.8px solid #e8e8e8;
+            }
+            > .col-control > input {
+              width: 100%;
+              padding: 8px 15px;
+              margin-top: 8px;
+              outline: 0;
+              border-radius: 4px;
+              font-family: "Raleway";
+              font-size: 16px;
+              border: 0.8px solid #e8e8e8;
+            }
+            > .col-control > textarea {
+              width: 100%;
+              outline: 0;
+              display: block;
+              border-radius: 4px;
+              padding: 6px 15px;
+              font-size: 16px;
+              border: 0.8px solid #e8e8e8;
+            }
+            > textarea {
+              width: 100%;
+              outline: 0;
+              display: block;
+              border-radius: 4px;
+              padding: 6px 15px;
+              font-size: 16px;
+              border: 0.8px solid #e8e8e8;
+            }
+          }
+        }
+        & .contact-rapcha {
+          padding: 20px;
+          padding-top: 0;
+          background: #fff;
+        }
+        & .contact-send {
+          padding: 20px;
+          padding-top: 0;
+          background: #fff;
+          > a {
+            width: 100%;
+          }
+          > a > p {
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            border-radius: 4px;
+            background-color: $color-first;
+          }
+          > input {
+            padding: 12px 0;
+            text-align: center;
+            color: #fff;
+            border-radius: 4px;
+            background-color: #174ae6;
+            width: 100%;
+            outline: 0;
+            border: 0;
+            font-size: 18px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

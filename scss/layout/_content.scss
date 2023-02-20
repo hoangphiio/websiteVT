@@ -1,0 +1,301 @@
+.partner {
+  &-inner {
+    padding: 1.875rem 0 6.25rem 0;
+  }
+  &-column-logo {
+    @include mid-flex-btw();
+    gap: 30px;
+  }
+  &-column-logo:not(:nth-child(4)) {
+    padding-bottom: 1.875rem;
+  }
+
+  &-column-top .solution-inner-title {
+    @include max(768px) {
+      h2 {
+        font-size: 28px;
+        @include max(600px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 18px;
+        @include max(600px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.event {
+  background: linear-gradient(179.65deg, #ffffff 0.22%, #f4f9ff 99.61%);
+  &-inner {
+    padding: 1.875rem 0 3.4375rem 0;
+    .swiper {
+      padding-top: 1.875rem;
+      padding-bottom: 3.125rem;
+    }
+    &-card {
+      background-color: #fff;
+    }
+    &-img {
+      img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+    }
+    &-content {
+      padding: 0.9375rem 1.25rem 1.875rem 1.25rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      cursor: pointer;
+    }
+    &-time {
+      @include mid-flex-btw();
+      padding-bottom: 0.9375rem;
+      p.time {
+        font-size: 0.875rem;
+        color: #858585;
+      }
+      p.content {
+        font-size: 0.875rem;
+        color: #447bfe;
+        font-style: italic;
+      }
+    }
+    &-title {
+      padding-bottom: 1.25rem;
+      a {
+        color: #000;
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+        font-weight: 600;
+        @include lc(3);
+      }
+    }
+    &-text {
+      a {
+        font-size: 0.875rem;
+        line-height: 1.1875rem;
+        color: #858585;
+        @include lc(5);
+      }
+    }
+  }
+  &-pagination {
+    .swiper-pagination-bullet-active {
+      background-color: #b6b6b6 !important;
+    }
+    .swiper-pagination-bullet {
+      width: 0.9375rem;
+      height: 0.9375rem;
+      background: #e2e2e2;
+      opacity: 1;
+    }
+  }
+}
+
+.content {
+  &-inner {
+    @include flex();
+    justify-content: space-between;
+    padding-top: 120px;
+    @include max(1160px) {
+      flex-direction: column;
+    }
+  }
+  &-inner:nth-child(even) {
+    flex-direction: row-reverse;
+    @include max(1160px) {
+      flex-direction: column;
+    }
+  }
+  &-column {
+    max-width: 550px;
+    width: 50%;
+    @include max(1160px) {
+      width: 100%;
+      max-width: none;
+      padding-bottom: 20px;
+    }
+    &-title {
+      & p {
+        font-size: 35px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        position: relative;
+        @include max(400px) {
+          font-size: 20px;
+        }
+        &::before {
+          content: "";
+          width: 120px;
+          height: 5px;
+          position: absolute;
+          bottom: 0;
+          @include max(400px) {
+            width: 80px;
+          }
+        }
+      }
+    }
+    &-text {
+      & p:nth-child(1) {
+        padding: 20px 0 10px 0;
+      }
+      & p:nth-child(2) {
+        line-height: 28px;
+        padding-bottom: 10px;
+      }
+      & .title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &-img {
+      position: relative;
+      &:hover .content-hover-overlay {
+        width: 30%;
+      }
+      & img {
+        display: block;
+      }
+    }
+    &-form {
+      @include flex();
+      justify-content: space-between;
+      @include max(1160px) {
+        justify-content: normal;
+      }
+      @include max(430px) {
+        flex-direction: column;
+      }
+    }
+    &-right {
+      @include max(1160px) {
+        margin-left: 20px;
+      }
+      @include max(430px) {
+        margin-left: 0;
+      }
+    }
+    &-left,
+    &-right {
+      position: relative;
+      padding-left: 17px;
+      & li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        left: -18px;
+        top: -12px;
+        bottom: 0;
+        margin: auto;
+      }
+      & li {
+        padding-bottom: 10px;
+        position: relative;
+      }
+    }
+    &-detail {
+      > a {
+        color: $color-first;
+        font-size: 16px;
+        font-style: italic;
+        cursor: pointer;
+      }
+    }
+  }
+  &-hover-overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+}
+
+.register {
+  &-inner {
+    position: relative;
+    .banner-content-img {
+      padding-top: calc((350 / 1728) * 100%);
+      @include max(450px) {
+        padding-top: calc((350 / 1728) * 150%);
+      }
+      .img {
+        animation: zoomout 10s linear infinite;
+      }
+    }
+    &-form {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translate(0%, 30%);
+      @include max(1180px) {
+        transform: translate(0%, 25%);
+      }
+      @include max(1100px) {
+        transform: translate(0%, 30%);
+      }
+      @include max(1024px) {
+        transform: translate(0%, 20%);
+      }
+      @include max(700px) {
+        transform: translate(0%, 20%);
+      }
+      .register-text {
+        padding-bottom: 50px;
+        @include max(1180px) {
+          padding-bottom: 30px;
+        }
+        @include max(700px) {
+          padding-bottom: 20px;
+        }
+        @include max(500px) {
+          padding-bottom: 10px;
+        }
+        > p {
+          font-weight: 600;
+          font-size: 36px;
+          text-align: center;
+          color: #ffffff;
+          @include max(840px) {
+            font-size: 26px;
+          }
+          @include max(700px) {
+            font-size: 16px;
+          }
+          @include max(500px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .register-button {
+        text-align: center;
+        > a {
+          color: #2f6adb;
+          font-weight: 600;
+          padding: 10px 55px;
+          border-radius: 8px;
+          background-color: #fff;
+          @include max(700px) {
+            padding: 8px 40px;
+            font-size: 12px;
+          }
+          @include max(500px) {
+            padding: 4px 30px;
+          }
+        }
+      }
+    }
+  }
+}

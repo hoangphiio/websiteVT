@@ -1,0 +1,92 @@
+.blog {
+  margin-top: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/tintuc/blog-img1.png");
+  &-inner {
+    padding-top: 50px;
+    &-banner {
+      text-align: center;
+      h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #002485;
+        padding-top: 30px;
+        padding-bottom: 15px;
+      }
+      p {
+        font-size: 26px;
+        padding-bottom: 30px;
+        @include max(520px) {
+          font-size: 22px;
+        }
+        @include max(450px) {
+          font-size: 18px;
+        }
+        @include max(355px) {
+          font-size: 14px;
+        }
+      }
+      input[type="text"] {
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.6);
+        outline: 0;
+        color: #544837;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 10px 24px;
+        width: 100%;
+        cursor: pointer;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        @include max(520px) {
+          font-size: 16px;
+        }
+        @include max(450px) {
+          font-size: 14px;
+        }
+        @include max(355px) {
+          font-size: 12px;
+        }
+      }
+      input:-ms-input-placeholder {
+        font-style: normal;
+        font-size: 18px;
+      }
+      input::-moz-placeholder {
+        font-style: normal;
+        font-size: 18px;
+      }
+      input::-webkit-input-placeholder {
+        font-style: normal;
+        font-size: 18px;
+        font-style: italic;
+        color: #9a9a9a;
+        @include max(520px) {
+          font-size: 16px;
+        }
+        @include max(450px) {
+          font-size: 14px;
+        }
+        @include max(355px) {
+          font-size: 12px;
+        }
+      }
+      .ic-search {
+        font-size: 20px;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+        }
+      }
+    }
+    &-search {
+      padding-bottom: 60px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 750px;
+    }
+  }
+}

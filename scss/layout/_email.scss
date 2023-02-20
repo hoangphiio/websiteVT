@@ -1,0 +1,82 @@
+.email {
+  & .container {
+    max-width: 600px;
+    height: 100vh;
+    @include mid-flex();
+    justify-content: center;
+  }
+  &-inner {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    & .email-name {
+      margin-bottom: 20px;
+      > h3 {
+        font-size: 20px;
+        color: $color-first;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dfdfdf;
+      }
+    }
+    & .email-contact {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 15px;
+      > p > span {
+        color: $color-first;
+      }
+    }
+
+    & .email-form {
+      padding: 25px;
+      margin-bottom: 20px;
+      background-color: #f8f8f8;
+      & .form-input {
+        padding-bottom: 20px;
+        @include flex();
+        align-items: center;
+        &:nth-child(3) {
+          > p:nth-child(2) {
+            color: $color-first;
+          }
+        }
+        > p {
+          &:nth-child(1) {
+            font-size: 13px;
+            font-style: italic;
+            width: 25%;
+            @include max(352px) {
+              width: 35%;
+            }
+          }
+          &:nth-child(2) {
+            width: 75%;
+            font-size: 13px;
+            @include max(352px) {
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+    & .email-noti {
+      text-align: center;
+      margin-bottom: 25px;
+      > p {
+        color: #404040;
+        font-size: 13px;
+        font-style: italic;
+        > span {
+          text-decoration: underline;
+          color: $color-first;
+        }
+      }
+    }
+    & .email-copyright {
+      > p {
+        color: #9a9a9a;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}

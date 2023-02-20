@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.5,0.5),translate(-0.5,-0.5)" id="gradient_1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#C0EBFF" />
+    </radialGradient>
+  </defs>
+  <g id="Group-21">
+    <path d="M40 20L40 20C40 31.053 31.053 40 20 40L20 40C8.96279 40 0 31.053 0 20L0 20C0 8.96279 8.94695 0 20 0L20 0C31.053 0 40 8.96279 40 20Z" id="Path-Copy-2" fill="url(#gradient_1)" stroke="none" />
+    <path d="M30.3228 18.2938L30.3228 26.0937L20.0853 31.9437L9.84784 26.0937L9.84784 13.9063L20.0853 8.05628L30.3228 13.9063L20.0853 19.7563L20.0853 24.1437L16.1853 22.1937L16.1853 17.8063C16.1853 17.8063 21.5478 14.8813 22.5228 13.9063L19.5978 12.4438L13.2603 16.3438L13.2603 23.6562L19.5978 27.5562L25.9353 23.6562L25.9353 20.7312L30.3228 18.2938Z" id="Rectangle_1_copy_6_5_" fill="#00ADEE" fill-opacity="0.9" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

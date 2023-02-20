@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.5,0.5),translate(-0.5,-0.5)" id="gradient_1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#C0EBFF" />
+    </radialGradient>
+  </defs>
+  <g id="Group-33">
+    <path d="M40 20L40 20C40 31.053 31.053 40 20 40L20 40C8.96279 40 0 31.053 0 20L0 20C0 8.96279 8.94695 0 20 0L20 0C31.053 0 40 8.96279 40 20Z" id="Path-Copy" fill="url(#gradient_1)" stroke="none" />
+    <g id="Group-52-Copy" transform="translate(5.374672 10.35122)">
+      <path d="M10.6482 2.92139L11.6587 3.50393L3.93191 16.9075L2.92139 16.325L10.6482 2.92139Z" id="Line-4-Copy-11" fill="#415086" stroke="none" />
+      <path d="M25.1553 2.92139L26.1659 3.50393L18.4391 16.9075L17.4286 16.325L25.1553 2.92139Z" id="Line-4-Copy-13" fill="#415086" stroke="none" />
+      <path d="M10.062 3.51788L11.0622 2.91777L19.0981 16.311L18.098 16.9111L10.062 3.51788Z" id="Line-5-Copy-6" fill="#415086" stroke="none" />
+      <path d="M3.64502 19.6831C5.65811 19.6831 7.29004 18.0512 7.29004 16.0381C7.29004 14.025 5.65811 12.3931 3.64502 12.3931C1.63193 12.3931 0 14.025 0 16.0381C0 18.0512 1.63193 19.6831 3.64502 19.6831Z" id="Oval-Copy-31" fill="#34B933" fill-rule="evenodd" stroke="none" />
+      <path d="M18.2251 19.6831C20.2382 19.6831 21.8701 18.0512 21.8701 16.0381C21.8701 14.025 20.2382 12.3931 18.2251 12.3931C16.212 12.3931 14.5801 14.025 14.5801 16.0381C14.5801 18.0512 16.212 19.6831 18.2251 19.6831Z" id="Oval-Copy-33" fill="#28B0FF" fill-rule="evenodd" stroke="none" />
+      <path d="M10.9351 7.29004C12.9481 7.29004 14.5801 5.65811 14.5801 3.64502C14.5801 1.63193 12.9481 0 10.9351 0C8.92197 0 7.29004 1.63193 7.29004 3.64502C7.29004 5.65811 8.92197 7.29004 10.9351 7.29004Z" id="Oval-Copy-35" fill="#FFC107" fill-rule="evenodd" stroke="none" />
+      <path d="M25.5151 7.29004C27.5282 7.29004 29.1601 5.65811 29.1601 3.64502C29.1601 1.63193 27.5282 0 25.5151 0C23.502 0 21.8701 1.63193 21.8701 3.64502C21.8701 5.65811 23.502 7.29004 25.5151 7.29004Z" id="Oval-Copy-37" fill="#415086" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

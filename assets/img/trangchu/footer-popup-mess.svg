@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group">
+    <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" id="background" fill="#262626" stroke="none" />
+    <g id="icon" transform="translate(3.75 3.977295)">
+      <path d="M12.5 5.7875C12.5 8.98409 9.70114 11.575 6.25 11.575C5.6441 11.5754 5.04093 11.494 4.45682 11.333L2.32841 12.5L2.32841 10.2932C0.909091 9.23295 0 7.61364 0 5.7875C0 2.59091 2.79886 0 6.25 0C9.70114 0 12.5 2.59205 12.5 5.7875L12.5 5.7875Z" id="Path" fill="#FFFFFF" stroke="none" />
+      <path d="M10.2875 4.16705L6.87045 7.79205L5.27955 6.09545L2.17386 7.79318L5.59091 4.16705L7.22159 5.86364L10.2875 4.16705Z" id="Path" fill="#262626" stroke="none" />
+    </g>
+  </g>
+</svg>

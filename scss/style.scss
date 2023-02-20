@@ -1,0 +1,31 @@
+@import url("../js/library/aniamte/animate.css");
+@import url("../js/library/aos/aos.css");
+@import url("../js/library/hover/hover.css");
+@import url("../js/library/swiper/swiper-bundle-min.css");
+
+// component
+@import "./component/burgerMenu";
+@import "./component/capcha";
+
+// core
+@import "./core/animation";
+@import "./core/base";
+@import "./core/mixin";
+@import "./core/reset";
+@import "./core/variable";
+
+// layout
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/solution";
+@import "./layout/content";
+@import "./layout/feedback";
+@import "./layout/footer";
+@import "./layout/history";
+@import "./layout/position";
+@import "./layout/news";
+@import "./layout/customer";
+@import "./layout/blog";
+@import "./layout/tab";
+@import "./layout/contact";
+@import "./layout/email";
