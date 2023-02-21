@@ -63,8 +63,37 @@
       &:hover {
         background-color: #fff !important;
       }
-      &:hover .location-list > a > h3 > span {
-        color: #00c86b;
+      &.form-01 {
+        &.hvr-reveal:before {
+          border-color: #ffe99b;
+        }
+        &:hover .location-list > a > h3 > span {
+          color: #ffe99b;
+          font-weight: 700;
+        }
+      }
+      &.form-02 {
+        &.hvr-reveal:before {
+          border-color: #99b1ff;
+        }
+        &:hover .location-list > a > h3 > span {
+          color: #99b1ff;
+          font-weight: 700;
+        }
+      }
+      &.form-03 {
+        &.hvr-reveal:before {
+          border-color: #acf1ff;
+        }
+        &:hover .location-list > a > h3 > span {
+          color: #acf1ff;
+          font-weight: 700;
+        }
+      }
+      &.form-04 {
+        &:hover .location-list > a > h3 > span {
+          color: #00c86b;
+        }
       }
       .location-list {
         padding-bottom: 10px;
@@ -137,7 +166,6 @@
 }
 
 .detail {
-  background: linear-gradient(0deg, #ffffff 0%, #f1f6ff 32.32%, #eff5ff 32.32%);
   &-inner {
     padding-top: 130px;
     &-box {
@@ -148,15 +176,18 @@
           align-items: center;
         }
         > a > i {
-          padding: 12px 0.976rem;
+          padding: 7px 0.663rem;
           border-radius: 50%;
           background: #fff;
           margin-right: 20px;
           color: $color-first;
+          &::before {
+            color: #002485;
+          }
         }
         > a > p {
           font-size: 26px;
-          @include max(500px){
+          @include max(500px) {
             font-size: 18px;
           }
         }
@@ -172,7 +203,7 @@
           padding-bottom: 20px;
         }
         > a {
-          padding: 10px 25px;
+          padding: 10px 3.824rem;
           background-color: $color-first;
           color: #fff;
           border-radius: 4px;
@@ -277,7 +308,7 @@
         }
         &-button {
           text-align: center;
-          @include max(700px){
+          @include max(700px) {
             text-align: left;
           }
           .popup {
@@ -290,7 +321,7 @@
             bottom: 0;
             transform: translate(50%, 30%);
             transition: all 1s ease-in-out;
-            @include max(1280px){
+            @include max(1280px) {
               width: 90%;
               transform: translate(5%, 30%);
             }
@@ -321,22 +352,22 @@
                     line-height: 26px;
                     color: #000000;
                     padding-bottom: 8px;
-                    @include max(700px){
+                    @include max(700px) {
                       text-align: center;
                       font-size: 18px;
                     }
-                    @include max(500px){
+                    @include max(500px) {
                       font-size: 14px;
                     }
                   }
                   p:nth-child(2) {
                     font-size: 20px;
                     font-style: italic;
-                    @include max(700px){
+                    @include max(700px) {
                       text-align: center;
                       font-size: 16px;
                     }
-                    @include max(500px){
+                    @include max(500px) {
                       font-size: 10px;
                     }
                   }
@@ -369,7 +400,7 @@
             border-radius: 4px;
             background-color: $color-first;
             transition: all 0.3s ease-out;
-            @include max(700px){
+            @include max(700px) {
               width: 100%;
               padding: 10px 0;
               text-align: center;

@@ -149,8 +149,9 @@
           border-radius: 10px;
           & .form-title {
             > p {
-              font-size: 20px;
-              padding-bottom: 30px;
+              font-size: 18px;
+              color: #262626;
+              padding-bottom: 20px;
               @include max(450px) {
                 font-size: 16px;
               }
@@ -161,9 +162,7 @@
               padding-bottom: 20px;
             }
             > label {
-              @include max(450px) {
-                font-size: 14px;
-              }
+              font-size: 14px;
             }
             > label > span {
               color: red;

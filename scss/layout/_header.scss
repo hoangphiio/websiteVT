@@ -69,7 +69,6 @@
           @include max(1100px) {
             @include flex();
           }
-
           & a {
             @include max(1100px) {
               width: 100%;
@@ -228,7 +227,7 @@
           padding-bottom: 0;
         }
       }
-      li > a {
+      li a {
         font-size: 14px;
       }
       li > a::after {
@@ -427,5 +426,12 @@
         background: linear-gradient(217deg, #0262e9 0%, #0054ae 100%);
       }
     }
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+  .header-box{
+    height: 100px;
   }
 }
