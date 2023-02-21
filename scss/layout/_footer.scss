@@ -69,8 +69,10 @@
         &:hover {
           color: $color-first;
         }
-        > span {
-          color: #1665d8;
+        &:nth-child(1) {
+          > span {
+            color: #1665d8;
+          }
         }
         > img {
           padding-right: 8px;
@@ -415,7 +417,12 @@
         }
         a {
           position: relative;
+        }
+        a:not(:last-child) {
           margin-right: 70px;
+          @include max(600px) {
+            margin: 0;
+          }
         }
         a > p {
           font-size: 14px;
@@ -426,7 +433,7 @@
             background: #919191;
             border-radius: 50%;
             position: absolute;
-            top: 0;
+            top: -4px;
             bottom: 0;
             left: -15px;
             margin: auto;

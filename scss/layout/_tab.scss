@@ -53,6 +53,9 @@
       -webkit-animation: fadeEffect 2s;
       animation: fadeEffect 2s;
       padding: 0 20px;
+      @include max(700px) {
+        padding: 0;
+      }
       &.n-tab-content {
         transition: opacity 800ms ease-out;
         opacity: 0;
@@ -77,10 +80,15 @@
       }
       .tablist-reading {
         img {
-          max-width: 345px;
+          width: 100%;
+          max-width: unset;
           max-height: 160px;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
+          @include max(1024px) {
+            max-width: none;
+            max-height: none;
+          }
         }
       }
       .content-small {
@@ -95,7 +103,6 @@
           font-size: 22px;
           line-height: 26px;
           color: #000000;
-          padding-bottom: 30px;
         }
         .time-small {
           @include mid-flex-btw();
@@ -171,6 +178,9 @@
           @include max(1023px) {
             width: 100%;
           }
+          @include max(1023px) {
+            margin-left: 0;
+          }
           .tablist-column {
             height: 100%;
             @include mid-flex-btw();
@@ -212,12 +222,21 @@
             font-size: 20px;
             font-weight: 700;
           }
+          @include max(700px) {
+            top: 25%;
+          }
         }
         .swiper-button-prev {
           left: -15px;
+          @include max(700px) {
+            left: 10px;
+          }
         }
         .swiper-button-next {
           right: -15px;
+          @include max(700px) {
+            right: 10px;
+          }
         }
       }
       &-content {
@@ -230,14 +249,15 @@
             font-weight: 700;
             font-size: 32px;
             color: #544837;
+            @include lc(2);
             @include max(520px) {
-              font-size: 28px;
-            }
-            @include max(450px) {
               font-size: 24px;
             }
-            @include max(355px) {
+            @include max(450px) {
               font-size: 20px;
+            }
+            @include max(355px) {
+              font-size: 16px;
             }
           }
         }
@@ -262,16 +282,16 @@
             border-radius: 4px;
             background-color: rgba(23, 74, 230, 0.1);
             @include max(520px) {
-              font-size: 16px;
+              font-size: 14px;
             }
             @include max(500px) {
               margin-bottom: 10px;
             }
             @include max(450px) {
-              font-size: 14px;
+              font-size: 12px;
             }
             @include max(355px) {
-              font-size: 12px;
+              font-size: 10px;
             }
           }
           > p:nth-child(2) {
@@ -279,32 +299,40 @@
             line-height: 22px;
             color: #858585;
             @include max(520px) {
-              font-size: 16px;
-            }
-            @include max(450px) {
               font-size: 14px;
             }
-            @include max(355px) {
+            @include max(450px) {
               font-size: 12px;
+            }
+            @include max(355px) {
+              font-size: 10px;
             }
           }
         }
         .tablist-text {
+          @include lc(3);
           > p {
             font-weight: 500;
             line-height: 28px;
             font-size: 18px;
             color: #858585;
-            @include lc(3);
             @include max(520px) {
-              font-size: 16px;
-            }
-            @include max(450px) {
               font-size: 14px;
             }
-            @include max(355px) {
+            @include max(450px) {
               font-size: 12px;
             }
+            @include max(355px) {
+              font-size: 10px;
+            }
+          }
+          & > * {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            font-weight: 400 !important;
           }
         }
       }
@@ -331,29 +359,53 @@
           width: 100%;
         }
         div.tablist-inner-body {
-          width: 31%;
+          width: 33.3333%;
           height: 100%;
           @include max(1024px) {
+            width: 50%;
+          }
+          @include max(1024px) {
+            &:nth-child(2) {
+              padding-right: 0;
+            }
+            &:nth-child(3) {
+              padding-left: 0;
+              padding-right: 20px;
+            }
+            &:nth-child(4) {
+              padding-left: 20px;
+              padding-right: 0;
+            }
+            &:nth-child(5) {
+              padding-left: 0;
+              padding-right: 20px;
+            }
+            &:nth-child(9) {
+              padding-left: 0;
+              padding-right: 20px;
+            }
+          }
+          @include max(700px) {
             width: 100%;
           }
-        }
-        div.tablist-inner-col-item.exp-manage {
-          width: 100%;
-          justify-content: space-between;
-          @include max(1024px) {
-            flex-direction: column;
+          &:nth-child(3n + 1) {
+            padding-right: 20px;
+            @include max(700px) {
+              padding: 0;
+            }
           }
-        }
-        div.tablist-inner-col-item.exp-manage
-          .tablist-inner-body:nth-child(odd) {
-          padding: 0;
-        }
-        div.tablist-inner-col-item.exp-manage
-          .tablist-inner-body:nth-child(even) {
-          padding: 0;
-        }
-        div.tablist-inner-box {
-          padding-bottom: 30px;
+          &:nth-child(3n + 2) {
+            padding: 0 20px;
+            @include max(700px) {
+              padding: 0;
+            }
+          }
+          &:nth-child(3n + 3) {
+            padding-left: 20px;
+            @include max(700px) {
+              padding: 0;
+            }
+          }
         }
       }
     }
@@ -378,7 +430,7 @@
         &.exp-manage {
           @include flex();
           flex-wrap: wrap;
-          width: calc(100% - 30px);
+          width: 100%;
           @include max(700px) {
             width: 100%;
             flex-direction: column;
@@ -389,21 +441,10 @@
             @include max(700px) {
               width: 100%;
             }
-            &:nth-child(odd) {
-              padding-right: 15px;
-              @include max(700px) {
-                padding-right: 0;
-              }
-            }
-            &:nth-child(even) {
-              padding-left: 15px;
-              @include max(700px) {
-                padding-left: 0;
-              }
-            }
           }
           .info-small {
-            padding-bottom: 10px;
+            margin-bottom: 10px;
+            @include lc(2);
             > p {
               line-height: 20px;
               font-weight: 600;
@@ -415,10 +456,16 @@
             padding-bottom: 10px;
           }
           .text-small {
+            @include lc(3);
+            & > * {
+              width: 100% !important;
+              font-size: 14px !important;
+              line-height: 18px !important;
+              font-weight: 400 !important;
+            }
             > p {
               font-size: 14px;
               line-height: 18px;
-              @include lc(3);
             }
           }
         }
@@ -499,43 +546,30 @@
       &-item {
         @include mid-flex();
         gap: 12px;
+        padding: 12px;
+        @include max(540px) {
+          gap: 4px;
+        }
         @include max(450px) {
           gap: 4px;
         }
         > li {
-          padding: 4px 12px;
-          background: #ffffff;
-          border: 1px solid #d9d9d9;
-          border-radius: 6px;
+          > a {
+            padding: 6px 12px;
+            background: #ffffff;
+            border: 1px solid #d9d9d9;
+            border-radius: 8px;
+          }
           > a.selected {
             color: #fff;
+            border: 1px solid #174ae6;
+            background-color: #0060ff;
           }
           > a.selected::before {
             display: none;
           }
-          @include max(700px) {
-            padding: 4px 8px;
-          }
           @include max(450px) {
             font-size: 10px;
-          }
-          .ic-left {
-            display: block;
-          }
-          .ic-right {
-            display: block;
-          }
-          &:first-child {
-            padding: 8px 12px;
-            @include max(450px) {
-              padding: 7px 8px;
-            }
-          }
-          &:last-child {
-            padding: 8px 12px;
-            @include max(450px) {
-              padding: 7px 8px;
-            }
           }
         }
         > li.selected {

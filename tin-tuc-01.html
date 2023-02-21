@@ -371,19 +371,55 @@
                             <div class="popup">
                               <div class="popup-box">
                                 <div class="popup-box-close">
+                                  <h3>Liên hệ</h3>
                                   <a class="close" href="#"><i class="ic-close"></i></a>
                                 </div>
                                 <div class="content">
-                                  <div class="content-box border-gradient">
-                                    <p>
-                                      Cảm ơn bạn đã ứng tuyển vào vị trí Nhân viên phát triển
-                                      phần
-                                      mềm (Developer)
-                                    </p>
-                                    <p>
-                                      Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
-                                    </p>
+                                  <div class="contact-form">
+                                    <div class="form-input">
+                                      <label for="fname">Họ và tên <span>(*)</span></label>
+                                      <input type="text" id="fname" name="firstname" />
+                                    </div>
+                                    <div class="form-input-box">
+                                      <div class="form-input">
+                                        <label for="email">Email <span>(*)</span></label>
+                                        <input type="text" id="email" name="email" />
+                                      </div>
+                                      <div class="form-input">
+                                        <label for="phone">Số điện thoại <span>(*)</span></label>
+                                        <input type="text" id="phone" name="phone" />
+                                      </div>
+                                    </div>
+                                    <div class="form-input">
+                                      <label for="text">Nội dung liên hệ <span>(*)</span></label>
+                                      <textarea rows="8" name="comment[text]" id="comment_text" cols="20"
+                                        class="text-area" autocomplete="off" role="textbox" aria-autocomplete="list"
+                                        aria-haspopup="true"></textarea>
+                                    </div>
                                   </div>
+                                </div>
+                                <div class="contact-rapcha">
+                                  <div class="captcha">
+                                    <div class="capcha-left">
+                                      <div class="spinner">
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span class="checkmark"><span>&nbsp;</span></span>
+                                        </label>
+                                      </div>
+                                      <div class="text">I'm not a robot</div>
+                                    </div>
+                                    <div class="logo">
+                                      <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                                      <p>reCAPTCHA</p>
+                                      <small>Privacy - Terms</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="contact-send">
+                                  <a href="email.html" class="hvr-float-shadow">
+                                    <p>Gửi</p>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -493,7 +529,51 @@
                       </div>
                     </div>
                     <div class="news-view">
-
+                      <h3>Bài viết xem nhiều</h3>
+                      <div class="news-post">
+                        <div class="content-small">
+                          <div class="info-small">
+                            <p>
+                              <a href="tin-tuc-01.html">
+                                Công nghệ số hóa ứng dụng trí tuệ nhân
+                                tạo phát triển mạnh ở Việt Nam
+                              </a>
+                            </p>
+                          </div>
+                          <div class="time-small">
+                            <p>Hoạt động sự kiện</p>
+                            <p>13:20 02/03/2022</p>
+                          </div>
+                        </div>
+                        <div class="content-small">
+                          <div class="info-small">
+                            <p>
+                              <a href="tin-tuc-01.html">
+                                Công nghệ số hóa ứng dụng trí tuệ nhân
+                                tạo phát triển mạnh ở Việt Nam
+                              </a>
+                            </p>
+                          </div>
+                          <div class="time-small">
+                            <p>Hoạt động sự kiện</p>
+                            <p>13:20 02/03/2022</p>
+                          </div>
+                        </div>
+                        <div class="content-small">
+                          <div class="info-small">
+                            <p>
+                              <a href="tin-tuc-01.html">
+                                Công nghệ số hóa ứng dụng trí tuệ nhân
+                                tạo phát triển mạnh ở Việt Nam
+                              </a>
+                            </p>
+                          </div>
+                          <div class="time-small">
+                            <p>Hoạt động sự kiện</p>
+                            <p>13:20 02/03/2022</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <!-- <div class="news-posts">
                       <h4>Bài viết nổi bật</h4>
@@ -537,56 +617,111 @@
         <div class="container">
           <div class="manage-wrap">
             <div class="manage-inner">
-              <div class="manage-inner-row">
-                <h3>Bài viết liên quan</h3>
+              <div class="manage-inner-rows">
                 <div class="manage-rows">
-                  <div class="manage-rows-column">
-                    <div class="manage-img">
-                      <img src="./assets/img/tintuc/news-img1-tt02.jpg" alt="" />
-                    </div>
-                    <div class="manage-content">
-                      <p>
-                        Thêm loạt công ty bán dẫn Trung Quốc bị Mỹ cấm vận
-                      </p>
-                      <p>13:20 02/03/2022</p>
-                      <p>
-                        Trong số 36 doanh nghiệp Trung Quốc vừa bị Mỹ đưa vào
-                        danh sách thực thể có nhà sản xuất YMTC và 21 tên tuổi
-                        trong lĩnh vực
-                      </p>
-                    </div>
+                  <div class="customer-inner-title">
+                    <h3>Bài viết liên quan</h3>
                   </div>
-                  <div class="manage-rows-column">
-                    <div class="manage-img">
-                      <img src="./assets/img/tintuc/news-img2-tt02.jpg" alt="" />
+                  <div class="manage-rows-swiper tablist-inner-panel-swipper">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                          <div class="tablist-inner-body">
+                            <div class="tablist-reading">
+                              <img src="./assets/img/tintuc/news-img1-tt02.jpg" alt="" />
+                            </div>
+                            <div class="content-small">
+                              <div class="info-small">
+                                <p>
+                                  <a href="tin-tuc-01.html">
+                                    Công nghệ số hóa ứng dụng trí tuệ nhân
+                                    tạo phát triển mạnh ở Việt Nam
+                                  </a>
+                                </p>
+                              </div>
+                              <div class="time-small">
+                                <p>Tin tức sản phẩm</p>
+                                <p>13:20 02/03/2022</p>
+                              </div>
+                              <div class="text-small">
+                                <p>
+                                  Trên thế giới, trí tuệ nhân tạo (AI) đã
+                                  trở thành một thuật ngữ phổ biến trong
+                                  thiết kế sản phẩm, cơ sở hạ tầng nhằm tối
+                                  ưu hóa côn…
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Slide 1 -->
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                          <div class="tablist-inner-body">
+                            <div class="tablist-reading">
+                              <img src="./assets/img/tintuc/news-img2-tt02.jpg" alt="" />
+                            </div>
+                            <div class="content-small">
+                              <div class="info-small">
+                                <p>
+                                  <a href="tin-tuc-01.html">
+                                    Hội thảo về giá trị của dữ liệu trong
+                                    chuyển đổi số trong thời đại 4.0
+                                  </a>
+                                </p>
+                              </div>
+                              <div class="time-small">
+                                <p>Kiến thức hữu ích</p>
+                                <p>13:20 02/03/2022</p>
+                              </div>
+                              <div class="text-small">
+                                <p>
+                                  Giá trị của dữ liệu và vấn đề liên quan
+                                  đến pháp lý, quá trình thu thập, xử lý
+                                  thông tin sẽ được thảo luận trong Vietnam
+                                  Data Summit
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Slide 2 -->
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                          <div class="tablist-inner-body">
+                            <div class="tablist-reading">
+                              <img src="./assets/img/tintuc/news-img3-tt02.jpg" alt="" />
+                            </div>
+                            <div class="content-small">
+                              <div class="info-small">
+                                <p>
+                                  <a href="tin-tuc-01.html">
+                                    Công nghệ số hóa ứng dụng trí tuệ nhân
+                                    tạo phát triển mạnh ở Việt Nam
+                                  </a>
+                                </p>
+                              </div>
+                              <div class="time-small">
+                                <p>Tin tức sản phẩm</p>
+                                <p>13:20 02/03/2022</p>
+                              </div>
+                              <div class="text-small">
+                                <p>
+                                  Trên thế giới, trí tuệ nhân tạo (AI) đã
+                                  trở thành một thuật ngữ phổ biến trong
+                                  thiết kế sản phẩm, cơ sở hạ tầng nhằm tối
+                                  ưu hóa côn…
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Slide 3 -->
+                      </div>
                     </div>
-                    <div class="manage-content">
-                      <p>
-                        Thêm loạt công ty bán dẫn Trung Quốc bị Mỹ cấm vận
-                      </p>
-                      <p>13:20 02/03/2022</p>
-                      <p>
-                        Trong số 36 doanh nghiệp Trung Quốc vừa bị Mỹ đưa vào
-                        danh sách thực thể có nhà sản xuất YMTC và 21 tên tuổi
-                        trong lĩnh vực
-                      </p>
-                    </div>
-                  </div>
-                  <div class="manage-rows-column">
-                    <div class="manage-img">
-                      <img src="./assets/img/tintuc/news-img3-tt02.jpg" alt="" />
-                    </div>
-                    <div class="manage-content">
-                      <p>
-                        Thêm loạt công ty bán dẫn Trung Quốc bị Mỹ cấm vận
-                      </p>
-                      <p>13:20 02/03/2022</p>
-                      <p>
-                        Trong số 36 doanh nghiệp Trung Quốc vừa bị Mỹ đưa vào
-                        danh sách thực thể có nhà sản xuất YMTC và 21 tên tuổi
-                        trong lĩnh vực
-                      </p>
-                    </div>
+                    <div class="swiper-button-next tablist-swiper-next"></div>
+                    <div class="swiper-button-prev tablist-swiper-prev"></div>
                   </div>
                 </div>
               </div>
