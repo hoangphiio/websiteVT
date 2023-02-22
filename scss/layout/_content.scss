@@ -29,12 +29,12 @@
 }
 
 .event {
-  background: linear-gradient(179.65deg, #ffffff 0.22%, #f4f9ff 99.61%);
+  background: linear-gradient(0deg, #ffffff 0%, #eef6ff 20%);
   &-inner {
     padding: 1.875rem 0 3.4375rem 0;
     .swiper {
       padding-top: 1.875rem;
-      padding-bottom: 3.125rem;
+      padding-bottom: 40px;
     }
     &-card {
       background-color: #fff;
@@ -51,47 +51,31 @@
       border-bottom-right-radius: 1rem;
       cursor: pointer;
     }
-    &-time {
-      @include mid-flex-btw();
-      padding-bottom: 0.9375rem;
-      p.time {
-        font-size: 0.875rem;
-        color: #858585;
+    & .tablist-inner-body {
+      & .info-small {
+        margin-bottom: 10px;
+        @include lc(2);
+        p {
+          font-size: 16px;
+        }
       }
-      p.content {
-        font-size: 0.875rem;
-        color: #447bfe;
-        font-style: italic;
+      & .time-small {
+        margin-bottom: 10px;
       }
-    }
-    &-title {
-      padding-bottom: 1.25rem;
-      a {
-        color: #000;
-        font-size: 1.25rem;
-        line-height: 1.5625rem;
-        font-weight: 600;
+      & .text-small {
         @include lc(3);
-      }
-    }
-    &-text {
-      a {
-        font-size: 0.875rem;
-        line-height: 1.1875rem;
-        color: #858585;
-        @include lc(5);
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          color: #858585;
+        }
       }
     }
   }
   &-pagination {
-    .swiper-pagination-bullet-active {
-      background-color: #b6b6b6 !important;
-    }
     .swiper-pagination-bullet {
       width: 0.9375rem;
       height: 0.9375rem;
-      background: #e2e2e2;
-      opacity: 1;
     }
   }
 }

@@ -1,6 +1,6 @@
 .banner {
   &-wrap {
-    padding-top: 5.25rem;
+    padding-top: 70px;
   }
   &-inner {
     .swiper {
@@ -60,20 +60,8 @@
     position: relative;
     &-img {
       position: relative;
-      padding-top: calc((728 / 1728) * 115%);
+      padding-top: calc((780 / 1728) * 100%);
       overflow: hidden;
-      @include max(1100px) {
-        padding-top: calc((728 / 1728) * 125%);
-      }
-      @include max(1024px) {
-        padding-top: calc((728 / 1728) * 125%);
-      }
-      @include max(860px) {
-        padding-top: calc((728 / 1728) * 150%);
-      }
-      @include max(750px) {
-        padding-top: calc((728 / 1728) * 180%);
-      }
       .img {
         animation: zoomout 3s linear;
       }

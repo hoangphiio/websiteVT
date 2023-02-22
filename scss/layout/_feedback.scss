@@ -1,110 +1,73 @@
-@use "sass:math";
 .feedback {
-  padding: 5.3125rem 0 8.4375rem 0;
   &-inner {
-    &-bottom {
+    &-box {
+      position: relative;
+      margin-bottom: 100px;
+      & .solution-inner-title {
+        position: absolute;
+        right: 155px;
+        top: 70px;
+        z-index: 998;
+        h2 {
+          padding-bottom: 0;
+        }
+      }
       .swiper {
-        padding-bottom: 3.75rem;
-        .feedback-pagination .swiper-pagination-bullet {
+        & .feedback-pagination {
+          position: absolute;
+          text-align: center;
+          bottom: 70px;
+          left: 200px;
+        }
+        & .feedback-pagination .swiper-pagination-bullet {
           width: 0.9375rem;
           height: 0.9375rem;
         }
       }
     }
     &-card {
-      position: relative;
-    }
-    &-img {
-      &.banner-content-img {
-        padding-top: ((420px / 1200px) * 100%);
-        @include max(780px) {
-          padding-top: ((420px / 1200px) * 120%);
+      @include flex();
+      align-items: center;
+      & .feedback-left {
+        width: 35%;
+        & .feedback-img {
+          margin-bottom: 15px;
         }
-        @include max(600px) {
-          padding-top: ((420px / 1200px) * 140%);
-        }
-        img {
-          animation: none;
-        }
-      }
-    }
-    &-box {
-      p {
-        font-weight: 400;
-        font-size: 1.375rem;
-        line-height: 1.875rem;
-        text-align: center;
-      }
-    }
-    &-evaluate {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 60%;
-      margin: auto;
-      transform: translate(25%, 20%);
-      @include max(400px) {
-        transform: translate(20%, 5%);
-      }
-      p {
-        padding-bottom: 1.875rem;
-        @include max(1100px) {
-          padding-bottom: 0;
-          font-size: 20px;
-        }
-        @include max(820px) {
-          font-size: 14px;
-          @include lc(3);
-        }
-      }
-      h3 {
-        font-size: 1.375rem;
-        @include max(1100px) {
+        & .feedback-customer {
           text-align: center;
-        }
-        @include max(1024px) {
-          font-size: 18px;
-        }
-        @include max(820px) {
-          font-size: 14px;
-          @include lc(1);
-        }
-      }
-      span {
-        font-size: 1.125rem;
-        font-style: italic;
-        font-weight: 400;
-        @include max(1024px) {
-          font-size: 18px;
-        }
-        @include max(820px) {
-          font-size: 14px;
-          @include lc(1);
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-style: italic;
+            font-size: 14px;
+          }
         }
       }
-    }
-    &-content {
-      .item-content {
-        position: relative;
-      }
-      .item-ceo {
-        text-align: center;
-      }
-    }
-    &-comma:nth-child(1) {
-      position: absolute;
-      top: 0;
-      left: -25px;
-    }
-    &-comma:nth-child(3) {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: rotate(180deg);
-      @include max(780px) {
-        right: -15px;
+      & .feedback-right {
+        width: 65%;
+        & .feedback-content {
+          margin-left: 30px;
+          & .feedback-comma {
+            img {
+              max-width: 35px;
+            }
+            &:nth-child(3) {
+              img {
+                float: right;
+              }
+            }
+          }
+          & .feedback-text {
+            text-align: center;
+            p {
+              font-size: 20px;
+              max-width: 573px;
+              margin: auto;
+              line-height: 30px;
+            }
+          }
+        }
       }
     }
   }
