@@ -65,28 +65,28 @@
       }
       &.form-01 {
         &.hvr-reveal:before {
-          border-color: #ffe99b;
+          border-color: #ffc107;
         }
         &:hover .location-list > a > h3 > span {
-          color: #ffe99b;
+          color: #ffc107;
           font-weight: 700;
         }
       }
       &.form-02 {
         &.hvr-reveal:before {
-          border-color: #99b1ff;
+          border-color: #415086;
         }
         &:hover .location-list > a > h3 > span {
-          color: #99b1ff;
+          color: #415086;
           font-weight: 700;
         }
       }
       &.form-03 {
         &.hvr-reveal:before {
-          border-color: #acf1ff;
+          border-color: #28b0ff;
         }
         &:hover .location-list > a > h3 > span {
-          color: #acf1ff;
+          color: #28b0ff;
           font-weight: 700;
         }
       }
@@ -178,7 +178,7 @@
         > a > i {
           padding: 7px 0.663rem;
           border-radius: 50%;
-          background: #fff;
+          background: #f8f8f8;
           margin-right: 20px;
           color: $color-first;
           &::before {
