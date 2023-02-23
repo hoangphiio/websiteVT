@@ -273,6 +273,12 @@ input[type="checkbox"]:checked + .checkmark > span:before {
   100% {
     transform: translateX(-1200px); } }
 
+@keyframes mover {
+  0% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(-10px); } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1751,7 +1757,9 @@ table {
           justify-content: center;
           gap: 15px; } }
       .footer-box-social > ul > li > a > img {
-        max-width: 40px; }
+        max-width: 40px;
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate; }
     .footer-box-logo {
       width: 130px; }
     .footer-box-mail {

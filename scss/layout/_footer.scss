@@ -37,6 +37,8 @@
       }
       > li > a > img {
         max-width: 40px;
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
       }
     }
     &-logo {
