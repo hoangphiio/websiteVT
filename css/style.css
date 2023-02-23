@@ -983,7 +983,7 @@ table {
           margin: auto;
           background-repeat: no-repeat;
           background-size: contain;
-          background-image: url("/assets/img/trangchu/banner2-center.png"); }
+          background-image: url("../assets/img/trangchu/banner2-center.png"); }
       .banner-inner .slide-two .banner-list .list-box .list-left p:nth-child(3) {
         font-size: 32px;
         font-weight: 700;
@@ -1016,7 +1016,7 @@ table {
           right: -35px;
           background-repeat: no-repeat;
           background-size: contain;
-          background-image: url("/assets/img/trangchu/banner2-top-video.svg"); }
+          background-image: url("../assets/img/trangchu/banner2-top-video.svg"); }
         .banner-inner .slide-two .banner-list .list-box .list-right .vpop::after {
           content: "";
           width: 68px;
@@ -1028,7 +1028,7 @@ table {
           left: 40px;
           background-repeat: no-repeat;
           background-size: contain;
-          background-image: url("/assets/img/trangchu/banner2-bottom.svg"); }
+          background-image: url("../assets/img/trangchu/banner2-bottom.svg"); }
       .banner-inner .slide-two .banner-list .list-box .list-right #video-popup-container {
         display: none;
         position: fixed;
