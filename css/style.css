@@ -2701,19 +2701,21 @@ input::-webkit-input-placeholder {
     font-size: 26px;
     text-transform: uppercase;
     color: #2f281e;
-    padding-bottom: 30px; }
+    padding-bottom: 40px; }
   .detail-inner-box .detail-box {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    padding-bottom: 30px; }
+    margin-bottom: 40px; }
     @media screen and (max-width: 700px) {
       .detail-inner-box .detail-box {
         flex-direction: column; } }
     .detail-inner-box .detail-box-title {
       width: 15%; }
+      .detail-inner-box .detail-box-title h4 {
+        font-size: 18px; }
       @media screen and (max-width: 700px) {
         .detail-inner-box .detail-box-title {
           width: 100%;
@@ -2726,16 +2728,15 @@ input::-webkit-input-placeholder {
           width: 100%;
           padding-left: 20px; } }
       .detail-inner-box .detail-box-jd > li {
-        position: relative; }
+        position: relative;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626; }
         .detail-inner-box .detail-box-jd > li::before {
-          content: "";
-          width: 8px;
-          height: 8px;
-          background: #544837;
-          position: absolute;
-          border-radius: 100%;
-          left: -20px;
-          top: 9px; }
+          content: ""; }
+    .detail-inner-box .detail-box:nth-child(2) .detail-box-jd li:not(:last-child) {
+      padding-bottom: 15px; }
   .detail-inner-box .detail-form {
     padding: 30px;
     background: #ffffff;

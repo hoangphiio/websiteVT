@@ -213,17 +213,20 @@
           font-size: 26px;
           text-transform: uppercase;
           color: #2f281e;
-          padding-bottom: 30px;
+          padding-bottom: 40px;
         }
       }
       .detail-box {
         @include flex();
-        padding-bottom: 30px;
+        margin-bottom: 40px;
         @include max(700px) {
           flex-direction: column;
         }
         &-title {
           width: 15%;
+          h4 {
+            font-size: 18px;
+          }
           @include max(700px) {
             width: 100%;
             padding-bottom: 20px;
@@ -238,15 +241,21 @@
           }
           > li {
             position: relative;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #262626;
             &::before {
               content: "";
-              width: 8px;
-              height: 8px;
-              background: #544837;
-              position: absolute;
-              border-radius: 100%;
-              left: -20px;
-              top: 9px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          & .detail-box-jd {
+            li {
+              &:not(:last-child) {
+                padding-bottom: 15px;
+              }
             }
           }
         }
