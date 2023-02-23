@@ -43,8 +43,19 @@
 }
 
 .location {
+  &-wrap {
+    margin-top: 120px;
+  }
+  &-title {
+    h3 {
+      text-align: center;
+      color: #1d3a89;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+  }
   &-inner {
-    padding-top: 30px;
+    margin-top: 50px;
     padding-bottom: 100px;
     @include max(1024px) {
       padding-bottom: 50px;
@@ -247,10 +258,37 @@
             color: #262626;
             &::before {
               content: "";
+              width: 10px;
+              height: 10px;
+              display: block;
+              position: absolute;
+              left: -20px;
+              top: 6px;
+              background-image: url(../assets/img/tuyendung/position-dot.svg);
+              background-size: cover;
+              background-repeat: no-repeat;
             }
           }
         }
-        &:nth-child(2) {
+        &:nth-child(5) {
+          & .detail-box-jd {
+            li {
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          & .detail-box-jd {
+            li {
+              &:not(:last-child) {
+                padding-bottom: 15px;
+              }
+            }
+          }
+        }
+        &:nth-child(7) {
           & .detail-box-jd {
             li {
               &:not(:last-child) {

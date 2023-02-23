@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="11.444183px" height="10.982483px" viewBox="0 0 11.444183 10.982483" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(0 0.49121094)">
+    <g id="Group">
+      <path d="M10.1361 3.64694L5.06806 5L1.3482 1.35306L6.41134 0L10.1361 3.64694" id="Path" fill="#FFFFFF" stroke="none" />
+      <path d="M5.06806 5L3.72478 10L8.78792 8.64694L10.1361 3.64694L5.06806 5Z" id="Path" fill="#C9C9C9" stroke="none" />
+      <path d="M0 6.35306L1.3482 1.35306L5.06806 5L3.72478 10L0 6.35306Z" id="Path" fill="#FFC107" stroke="none" />
+    </g>
+    <g id="Group" transform="translate(0.8167943 0)">
+      <path d="M10.1361 3.64694L5.06806 5L1.3482 1.35306L6.41134 0L10.1361 3.64694" id="Path" fill="none" fill-rule="evenodd" stroke="#54504F" stroke-width="0.9824763" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5.06806 5L3.72478 10L8.78792 8.64694L10.1361 3.64694L5.06806 5Z" id="Path" fill="none" fill-rule="evenodd" stroke="#54504F" stroke-width="0.9824763" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 6.35306L1.3482 1.35306L5.06806 5L3.72478 10L0 6.35306Z" id="Path" fill="none" fill-rule="evenodd" stroke="#54504F" stroke-width="0.9824763" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>
