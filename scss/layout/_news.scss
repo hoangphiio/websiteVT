@@ -136,6 +136,8 @@
             font-style: italic;
           }
         }
+      }
+      .news-box {
         & .list-share {
           @include flex();
           align-items: center;

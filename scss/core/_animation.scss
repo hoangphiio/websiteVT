@@ -63,3 +63,12 @@
     transform: scale(1);
   }
 }
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-160px);
+  }
+}

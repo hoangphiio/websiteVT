@@ -28,10 +28,6 @@ export default function navigationModule() {
           $(".menuabout li").removeClass("selected");
           $("li.commitment-quality").addClass("selected");
         }
-        if (scroll >= $("#quality-policy").offset().top) {
-          $(".menuabout li").removeClass("selected");
-          $("li.quality-policy").addClass("selected");
-        }
       });
     });
     // Click menu run to section
@@ -77,6 +73,5 @@ export default function navigationModule() {
         "fast"
       );
     });
-
   });
 }
