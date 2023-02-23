@@ -4743,7 +4743,7 @@ input::-webkit-input-placeholder {
   font-size: 30px;
 }
 .tablist-inner-panel-row:nth-child(1) {
-  width: 70%;
+  width: 65%;
   height: auto;
   margin-right: 20px;
   border-bottom-left-radius: 5px;
@@ -4759,7 +4759,7 @@ input::-webkit-input-placeholder {
   }
 }
 .tablist-inner-panel-row:nth-child(2) {
-  width: 30%;
+  width: 35%;
   height: auto;
   padding: 20px;
   border-radius: 10px;
