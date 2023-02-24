@@ -84,7 +84,7 @@
   &-inner {
     @include flex();
     justify-content: space-between;
-    padding-top: 120px;
+    margin-top: 80px;
     @include max(1160px) {
       flex-direction: column;
     }
