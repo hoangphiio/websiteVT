@@ -937,7 +937,7 @@ table {
     background: linear-gradient(217deg, #0262e9 0%, #0054ae 100%); }
 
 .banner-wrap {
-  padding-top: 70px; }
+  margin-top: 70px; }
 
 .banner-inner .slide-two .banner-list {
   height: 100%; }
@@ -1131,10 +1131,11 @@ table {
   height: 100vh; }
 
 .banner-content {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .banner-content-img {
     position: relative;
-    padding-top: calc((775 / 1728) * 110%);
+    padding-top: calc((700 / 1728) * 115%);
     overflow: hidden; }
     .banner-content-img .img {
       animation: zoomout 3s linear; }

@@ -1,6 +1,6 @@
 .banner {
   &-wrap {
-    padding-top: 70px;
+    margin-top: 70px;
   }
   &-inner {
     & .slide-two {
@@ -221,9 +221,10 @@
   }
   &-content {
     position: relative;
+    overflow: hidden;
     &-img {
       position: relative;
-      padding-top: calc((775 / 1728) * 110%);
+      padding-top: calc((700 / 1728) * 115%);
       overflow: hidden;
       .img {
         animation: zoomout 3s linear;
