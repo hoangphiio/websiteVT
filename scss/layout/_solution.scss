@@ -2,7 +2,7 @@
   background: linear-gradient(0deg, #ffffff -35%, #eef6ff 100%);
   &-inner {
     padding-top: 100px;
-    padding-bottom: 120px;
+    margin-bottom: 150px;
     @include max(1023px) {
       padding-bottom: 5.875rem;
     }

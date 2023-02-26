@@ -5,6 +5,7 @@ import searchModule from "./modules/searchModule.js";
 import swiperModule from "./modules/swiperModule.js";
 import tablistModule from "./modules/tablistModule.js";
 import videoModule from "./modules/videoModule.js";
+import dropdownModule from "./modules/dropdownModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   popupModule();
@@ -14,4 +15,5 @@ window.addEventListener("DOMContentLoaded", () => {
   swiperModule();
   tablistModule();
   videoModule();
+  dropdownModule();
 });

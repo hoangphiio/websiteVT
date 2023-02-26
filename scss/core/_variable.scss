@@ -35,21 +35,6 @@ $color-five: #00c86b;
   background-color: #b19bff;
   right: 0;
 }
-.border-darkblue p:nth-child(2):before {
-  background: linear-gradient(to right, $color-first, #a5bbff);
-}
-.border-green p:nth-child(2):before {
-  background: linear-gradient(to right, $color-five, #b6ffdd);
-}
-.border-yellow p:nth-child(2):before {
-  background: linear-gradient(to right, $color-four, #fff4d4);
-}
-.border-blue p:nth-child(2):before {
-  background: linear-gradient(to right, $color-second, #dbf2ff);
-}
-.border-purple p:nth-child(2):before {
-  background: linear-gradient(to right, #b19bff, #fff);
-}
 .li-darkblue li::before {
   background-color: $color-first;
 }

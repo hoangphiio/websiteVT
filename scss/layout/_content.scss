@@ -1,6 +1,6 @@
 .partner {
   &-inner {
-    padding: 1.875rem 0 6.25rem 0;
+    margin-bottom: 100px;
   }
   &-column-logo {
     @include mid-flex-btw();
@@ -81,10 +81,13 @@
 }
 
 .content {
+  &-box {
+    margin-top: 80px;
+  }
   &-inner {
     @include flex();
     justify-content: space-between;
-    margin-top: 80px;
+    margin-bottom: 80px;
     @include max(1160px) {
       flex-direction: column;
     }
@@ -105,9 +108,9 @@
     }
     &-title {
       & p {
-        font-size: 35px;
+        font-size: 22px;
         font-weight: 700;
-        padding-bottom: 20px;
+        color: #1665d8;
         position: relative;
         @include max(400px) {
           font-size: 20px;
@@ -126,26 +129,21 @@
     }
     &-text {
       & p:nth-child(1) {
-        padding: 20px 0 10px 0;
+        margin-bottom: 20px;
       }
       & p:nth-child(2) {
         line-height: 28px;
         padding-bottom: 10px;
       }
       & .title {
-        text-transform: uppercase;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 20px;
       }
     }
     &-img {
       position: relative;
       &:hover .content-hover-overlay {
-        width: 30%;
-      }
-      & img {
-        display: block;
+        width: 20%;
       }
     }
     &-form {
@@ -176,21 +174,124 @@
         height: 6px;
         position: absolute;
         left: -18px;
-        top: -12px;
+        top: 0;
         bottom: 0;
         margin: auto;
+        background-color: $color-first;
       }
       & li {
-        padding-bottom: 10px;
+        font-size: 18px;
+        margin-bottom: 15px;
         position: relative;
       }
     }
     &-detail {
       > a {
-        color: $color-first;
-        font-size: 16px;
-        font-style: italic;
+        color: #fff;
+        font-size: 14px;
         cursor: pointer;
+        padding: 9px 54px;
+        border-radius: 4px;
+        background: $color-first;
+      }
+      & .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(25, 25, 30, 0.5);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 999;
+        &:target {
+          visibility: visible;
+          opacity: 1;
+        }
+        & .popup {
+          position: absolute;
+          width: 80%;
+          height: auto;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transform: translate(15%, 10%);
+          transition: all 1s ease-in-out;
+          &-box {
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            &-close {
+              @include flex();
+              align-items: center;
+              margin-bottom: 30px;
+              h3 {
+                width: 100%;
+                font-size: 36px;
+                font-weight: 700;
+              }
+              a {
+                width: auto;
+              }
+            }
+            & .form-input-box {
+              @include flex();
+              width: 100%;
+              & .form-input {
+                width: 50%;
+                &:nth-child(1) {
+                  margin-right: 15px;
+                }
+                &:nth-child(2) {
+                  margin-left: 15px;
+                }
+              }
+            }
+            & .form-input {
+              padding-bottom: 20px;
+              > label > span {
+                color: red;
+              }
+              > input {
+                width: 100%;
+                padding: 8px 15px;
+                margin-top: 8px;
+                outline: 0;
+                border-radius: 4px;
+                font-size: 16px;
+                font-family: "Raleway";
+                border: 0.8px solid #e8e8e8;
+              }
+              > textarea {
+                width: 100%;
+                outline: 0;
+                display: block;
+                border-radius: 4px;
+                padding: 6px 15px;
+                font-size: 16px;
+                margin-top: 8px;
+                border: 0.8px solid #e8e8e8;
+              }
+            }
+            & .contact-send {
+              width: 50%;
+              margin: auto;
+              margin-top: 30px;
+              a {
+                width: 100%;
+              }
+              p {
+                padding: 10px 0;
+                text-align: center;
+                color: #fff;
+                border-radius: 4px;
+                background-color: $color-first;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -205,81 +306,115 @@
   }
 }
 
-.register {
-  &-inner {
+* {
+  box-sizing: border-box;
+}
+
+.dropdown {
+  position: relative;
+  .dropdown-list {
+    padding: 25px 20px;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    border: 1px solid rgba(black, 0.2);
+    max-height: 223px;
+    overflow-y: auto;
+    background: #fff;
+    display: none;
+    z-index: 10;
+  }
+
+  .checkbox {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .dropdown-label {
+    display: block;
+    height: 44px;
+    font-size: 16px;
+    line-height: 42px;
+    background: #fff;
+    border: 1px solid rgba(black, 0.2);
+    padding: 0 40px 0 20px;
+    cursor: pointer;
     position: relative;
-    .banner-content-img {
-      padding-top: calc((350 / 1728) * 100%);
-      @include max(450px) {
-        padding-top: calc((350 / 1728) * 150%);
-      }
-      .img {
-        animation: zoomout 10s linear infinite;
-      }
-    }
-    &-form {
+
+    &:before {
+      content: "▼";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translate(0%, 30%);
-      @include max(1180px) {
-        transform: translate(0%, 25%);
-      }
-      @include max(1100px) {
-        transform: translate(0%, 30%);
-      }
-      @include max(1024px) {
-        transform: translate(0%, 20%);
-      }
-      @include max(700px) {
-        transform: translate(0%, 20%);
-      }
-      .register-text {
-        padding-bottom: 50px;
-        @include max(1180px) {
-          padding-bottom: 30px;
-        }
-        @include max(700px) {
-          padding-bottom: 20px;
-        }
-        @include max(500px) {
-          padding-bottom: 10px;
-        }
-        > p {
-          font-weight: 600;
-          font-size: 36px;
-          text-align: center;
-          color: #ffffff;
-          @include max(840px) {
-            font-size: 26px;
-          }
-          @include max(700px) {
-            font-size: 16px;
-          }
-          @include max(500px) {
-            font-size: 14px;
-          }
-        }
-      }
-      .register-button {
-        text-align: center;
-        > a {
-          color: #2f6adb;
-          font-weight: 600;
-          padding: 10px 55px;
-          border-radius: 8px;
-          background-color: #fff;
-          @include max(700px) {
-            padding: 8px 40px;
-            font-size: 12px;
-          }
-          @include max(500px) {
-            padding: 4px 30px;
-          }
-        }
-      }
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.25s;
+      transform-origin: center center;
     }
+  }
+  &.open {
+    .dropdown-list {
+      display: block;
+    }
+    .checkbox {
+      transition: 2s opacity 2s;
+      opacity: 1;
+    }
+    .dropdown-label:before {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .checkbox-custom {
+    display: none;
+  }
+
+  .checkbox-custom-label {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .checkbox-custom + .checkbox-custom-label:before {
+    content: "";
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(black, 0.3);
+    border-radius: 2px;
+    margin-top: -2px;
+  }
+
+  .checkbox-custom:checked + .checkbox-custom-label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    height: 4px;
+    padding: 2px;
+    transform: rotate(45deg);
+    text-align: center;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+  }
+  .checkbox-custom-label {
+    line-height: 16px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    color: black;
   }
 }

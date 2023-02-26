@@ -91,7 +91,7 @@ export default function swiperModule() {
 
   const swiperCard = new Swiper(".customer-inner-card .swiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 40,
     loop: true,
     observer: true,
     observeParents: true,
