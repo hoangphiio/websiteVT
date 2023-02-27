@@ -1975,7 +1975,8 @@ table {
         right: 30px;
         transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
         opacity: 1;
-        visibility: visible; }
+        visibility: visible;
+        z-index: 999; }
         .footer-box-bottom .footer-box-col:nth-child(3) #button.show {
           opacity: 1;
           visibility: visible; }
