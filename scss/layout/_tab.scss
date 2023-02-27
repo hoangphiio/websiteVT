@@ -17,6 +17,7 @@
           font-size: 16px;
           font-weight: 500;
           color: #2f281e;
+          cursor: pointer;
           @include max(800px) {
             font-size: 14px;
           }
@@ -198,6 +199,7 @@
           border-top-right-radius: 5px;
         }
         & .swiper {
+          cursor: pointer;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
           &-slide {
@@ -438,6 +440,7 @@
           .tablist-inner-body {
             width: 50%;
             margin-bottom: 30px;
+            cursor: pointer;
             @include max(700px) {
               width: 100%;
             }
@@ -494,6 +497,7 @@
         @include flex();
         align-items: center;
         background-color: #fff;
+        cursor: pointer;
         &:not(:last-child) {
           padding-bottom: 25px;
         }
