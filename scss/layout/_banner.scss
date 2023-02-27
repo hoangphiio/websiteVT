@@ -179,7 +179,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
         background: #f9fafa;
         & .banner-partner {
           overflow: hidden;
@@ -224,7 +224,7 @@
     overflow: hidden;
     &-img {
       position: relative;
-      padding-top: calc((700 / 1728) * 115%);
+      padding-top: calc((740 / 1728) * 115%);
       overflow: hidden;
       .img {
         animation: zoomout 3s linear;
