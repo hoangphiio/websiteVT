@@ -209,6 +209,15 @@
             }
           }
         }
+        & .contact-rapcha {
+          & .captcha {
+            padding: 0 25px;
+            margin-bottom: 30px;
+            & .iframe {
+              border-radius: 4px;
+            }
+          }
+        }
         & .contact-send {
           padding: 25px;
           padding-top: 0;
@@ -222,6 +231,15 @@
             padding: 10px 0;
             text-align: center;
             color: #fff;
+            border-radius: 4px;
+            background-color: $color-first;
+          }
+          input {
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            border: 0;
             border-radius: 4px;
             background-color: $color-first;
           }

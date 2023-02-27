@@ -166,6 +166,9 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
+            width: 100%;
+            height: auto;
+            max-width: 422px;
             transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
             opacity: 1;
             visibility: visible;
