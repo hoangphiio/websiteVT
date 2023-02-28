@@ -19,7 +19,6 @@
       }
       &:nth-child(2) {
         width: 70%;
-        margin-top: 160px;
         @include max(1100px) {
           width: 100%;
         }
@@ -54,17 +53,14 @@
       }
     }
     &-right {
+      padding-top: 150px;
       @include max(1100px) {
         padding-top: 60px;
       }
       @include max(600px) {
         padding-top: 0;
       }
-      &.about-info {
-        margin-bottom: 100px;
-      }
       &.vision-mission {
-        margin-bottom: 100px;
         & .history-inner-info {
           margin-bottom: 95px;
           h2 {

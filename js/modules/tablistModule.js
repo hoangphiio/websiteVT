@@ -58,4 +58,5 @@ export default function tablistModule() {
       new TabList(tabList);
     }
   })();
+  
 }

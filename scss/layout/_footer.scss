@@ -129,8 +129,11 @@
           &:hover {
             color: $color-first;
           }
-          &.hover:hover {
-            color: unset;
+          &.hover {
+            cursor: unset;
+            &:hover {
+              color: unset;
+            }
           }
         }
       }
