@@ -78,7 +78,9 @@
     }
 
     &-info {
-      margin-bottom: 50px;
+      &:not(:first-child) {
+        margin-bottom: 50px;
+      }
       h2 {
         font-size: 28px;
         line-height: 38px;

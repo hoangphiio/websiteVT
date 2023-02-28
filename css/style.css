@@ -2340,26 +2340,29 @@ input::-webkit-input-placeholder {
   .history-inner-right.commitment-quality .history-inner-info h2 {
     color: #002485; }
 
-.history-inner-info {
+.history-inner-info:not(:first-child) {
   margin-bottom: 50px; }
-  .history-inner-info h2 {
-    font-size: 28px;
-    line-height: 38px;
-    text-transform: uppercase;
-    color: #3b80f3;
-    font-weight: 700; }
-    @media screen and (max-width: 600px) {
-      .history-inner-info h2 {
-        font-size: 20px; } }
-  .history-inner-info p {
-    padding: 20px 0;
-    font-size: 16px;
-    line-height: 28px; }
-    @media screen and (max-width: 600px) {
-      .history-inner-info p {
-        font-size: 14px; } }
-  .history-inner-info p > span {
-    color: #002485; }
+
+.history-inner-info h2 {
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #3b80f3;
+  font-weight: 700; }
+  @media screen and (max-width: 600px) {
+    .history-inner-info h2 {
+      font-size: 20px; } }
+
+.history-inner-info p {
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 28px; }
+  @media screen and (max-width: 600px) {
+    .history-inner-info p {
+      font-size: 14px; } }
+
+.history-inner-info p > span {
+  color: #002485; }
 
 .history-inner-prove p {
   padding: 20px 0;
