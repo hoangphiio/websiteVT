@@ -8,6 +8,7 @@
     }
     @include max(450px) {
       padding-top: 120px;
+      padding-bottom: 20px;
     }
     & .contact-title {
       margin-bottom: 40px;
@@ -67,7 +68,7 @@
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
           background: #fffbef;
-          padding: 30px 30px 10px 30px;
+          padding: 25px;
           border: 3px solid #fff;
           & .info-hotline {
             @include flex();

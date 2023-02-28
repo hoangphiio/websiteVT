@@ -12,7 +12,7 @@
         @include max(1024px) {
           width: 50%;
         }
-        @include max(500px) {
+        @include max(800px) {
           width: 100%;
         }
       }
@@ -45,6 +45,9 @@
 .location {
   &-wrap {
     margin-top: 120px;
+    @include max(500px){
+      margin-top: 70px;
+    }
   }
   &-title {
     h3 {
@@ -52,6 +55,9 @@
       color: #1d3a89;
       font-size: 28px;
       text-transform: uppercase;
+      @include max(500px){
+        font-size: 20px;
+      }
     }
   }
   &-inner {
@@ -179,6 +185,9 @@
 .detail {
   &-inner {
     padding-top: 130px;
+    @include max(500px){
+      padding-top: 100px;
+    }
     &-box {
       .detail-breadcumb {
         padding-bottom: 20px;
@@ -208,10 +217,16 @@
           font-size: 36px;
           color: #2f281e;
           padding-bottom: 10px;
+          @include max(500px) {
+            font-size: 26px;
+          }
         }
         > p {
           font-size: 20px;
           padding-bottom: 20px;
+          @include max(500px) {
+            font-size: 16px;
+          }
         }
         > a {
           padding: 10px 3.824rem;
@@ -225,12 +240,15 @@
           text-transform: uppercase;
           color: #2f281e;
           padding-bottom: 40px;
+          @include max(500px) {
+            font-size: 20px;
+          }
         }
       }
       .detail-box {
         @include flex();
         margin-bottom: 40px;
-        @include max(700px) {
+        @include max(800px) {
           flex-direction: column;
         }
         &-title {
@@ -238,7 +256,7 @@
           h4 {
             font-size: 18px;
           }
-          @include max(700px) {
+          @include max(800px) {
             width: 100%;
             padding-bottom: 20px;
           }
@@ -246,7 +264,7 @@
         &-jd {
           width: 85%;
           line-height: 28px;
-          @include max(700px) {
+          @include max(800px) {
             width: 100%;
             padding-left: 20px;
           }
@@ -256,6 +274,10 @@
             font-size: 16px;
             font-weight: 500;
             color: #262626;
+            @include max(500px) {
+              font-size: 14px;
+              line-height: 25px;
+            }
             &::before {
               content: "";
               width: 10px;
@@ -309,6 +331,9 @@
           color: #2f281e;
           padding-bottom: 30px;
           text-align: center;
+          @include max(500px) {
+            font-size: 20px;
+          }
         }
         &-input {
           @include flex();
@@ -322,6 +347,7 @@
               width: 100%;
               padding-right: 0;
             }
+
             input:not(#files) {
               width: 100%;
               padding: 10px 15px;
@@ -346,6 +372,9 @@
                 border-radius: 5px;
                 position: absolute;
                 cursor: pointer;
+                @include max(500px){
+                  font-size: 14px;
+                }
               }
               .hidden {
                 opacity: 0;
@@ -451,6 +480,10 @@
               width: 100%;
               padding: 10px 0;
               text-align: center;
+            }
+            @include max(700px) {
+              font-size: 16px;
+              padding: 8px 0;
             }
           }
           .overlay {

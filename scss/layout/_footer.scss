@@ -1,7 +1,7 @@
 .footer {
   background: #fafafa;
   &-box {
-    padding-top: 80px;
+    padding-top: 50px;
     &-top {
       @include flex();
       align-items: center;
@@ -173,6 +173,9 @@
             opacity: 1;
             visibility: visible;
             z-index: 999;
+            @include max(470px) {
+              max-width: 275px;
+            }
             &.show {
               opacity: 1;
               visibility: visible;
@@ -192,9 +195,6 @@
       cursor: pointer;
       position: relative;
       padding-bottom: 20px;
-      @include max(1200px) {
-        width: calc(100% - 30px);
-      }
     }
     &-contact {
       &::before {

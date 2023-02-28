@@ -7,6 +7,9 @@
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.5625rem rgba(0, 0, 0, 0.14221);
+  @include max(1100px) {
+    padding: 1rem 0;
+  }
   &-box {
     @include mid-flex-btw();
     @include max(68.75rem) {

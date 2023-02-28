@@ -227,17 +227,26 @@
           @include max(700px) {
             top: 25%;
           }
+          @include max(400px) {
+            top: 20%;
+          }
         }
         .swiper-button-prev {
           left: -15px;
           @include max(700px) {
             left: 10px;
           }
+          @include max(400px) {
+            left: 5px;
+          }
         }
         .swiper-button-next {
           right: -15px;
           @include max(700px) {
             right: 10px;
+          }
+          @include max(400px) {
+            right: 5px;
           }
         }
       }
