@@ -279,6 +279,10 @@ input[type="checkbox"]:checked + .checkmark > span:before {
   100% {
     transform: translateY(-10px); } }
 
+@keyframes shine {
+  100% {
+    left: 80%; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -2364,13 +2368,34 @@ input::-webkit-input-placeholder {
 .history-inner-info p > span {
   color: #002485; }
 
-.history-inner-prove p {
-  padding: 20px 0;
-  font-size: 16px;
-  line-height: 28px; }
-  @media screen and (max-width: 600px) {
-    .history-inner-prove p {
-      font-size: 14px; } }
+.history-inner-prove {
+  position: relative; }
+  .history-inner-prove .prove-img {
+    position: relative; }
+    .history-inner-prove .prove-img::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg); }
+    .history-inner-prove .prove-img:hover::before {
+      -webkit-animation: shine 0.75s;
+      animation: shine 0.75s; }
+  .history-inner-prove .prove-text p {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 28px; }
+    @media screen and (max-width: 600px) {
+      .history-inner-prove .prove-text p {
+        font-size: 14px; } }
 
 .history-inner-pagination {
   bottom: 0 !important; }
