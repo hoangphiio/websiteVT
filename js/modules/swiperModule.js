@@ -141,34 +141,4 @@ export default function swiperModule() {
     },
   });
 
-  const swiperNews = new Swiper(".manage-rows-swiper .swiper", {
-    loop: true,
-    observer: true,
-    observeParents: true,
-    loopedSlides: 4,
-    spaceBetween: 40,
-    slidesPerView: 3,
-    speed: 1800,
-    autoplay: {
-      delay: 2500,
-    },
-    navigation: {
-      nextEl: ".manage-swiper-next",
-      prevEl: ".manage-swiper-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      500: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1160: {
-        slidesPerView: 3,
-      },
-    },
-  });
 }

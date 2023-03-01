@@ -35,6 +35,9 @@
     .swiper {
       padding-top: 1.875rem;
       padding-bottom: 40px;
+      & .swiper-wrapper {
+        height: auto;
+      }
     }
     &-card {
       background-color: #fff;
@@ -64,6 +67,13 @@
       }
       & .text-small {
         @include lc(3);
+        overflow: hidden;
+        & > * {
+          width: 100% !important;
+          font-size: 14px !important;
+          line-height: 18px !important;
+          color: #858585 !important;
+        }
         p {
           font-size: 14px;
           line-height: 18px;

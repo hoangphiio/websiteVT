@@ -1,0 +1,575 @@
+.main {
+  margin-top: 100px;
+}
+.titleCM {
+  color: #000575;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+/*********** Main ************/
+.wrap,
+.searchBox {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.footer .wrap,
+.end-ft .wrap,
+.version .wrap {
+  width: 963px;
+}
+.main-L,
+.mainCM-L,
+.mainCM-R {
+  float: right;
+  width: 234px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.main-C,
+.mainCM-C,
+.ArticleNews {
+  float: left;
+  width: 675px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.mainL {
+  width: 675px;
+  float: left;
+  padding-top: 30px;
+}
+.mainR {
+  width: 234px;
+  float: right;
+  padding-top: 30px;
+}
+.news1colum .PagePMBQ {
+  padding-top: 30px;
+}
+.PagePMBQ > div.main-L {
+  width: 20%;
+}
+.PagePMBQ > div.main-C {
+  padding: 0 40px;
+}
+.PagePMBQ > div.main-R {
+  width: 20%;
+}
+.microsoftR {
+  margin-bottom: 30px;
+}
+.left {
+  margin-bottom: 10px;
+}
+.left-ds {
+  padding: 15px 0px 0px 0px;
+  overflow: hidden;
+  height: 100%;
+}
+.main-ds p {
+  margin: 0 0 15px 0;
+}
+.PrivacyPolicy a {
+  color: #007aff;
+}
+.PrivacyPolicy a:hover {
+  text-decoration: underline;
+}
+/*-- About us --*/
+.PrivacyPolicy {
+  padding-bottom: 20px;
+}
+.PrivacyPolicy h3 {
+  margin: 35px 0 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.PrivacyPolicy h3 em {
+  font-style: normal;
+}
+.PrivacyPolicy h3:first-child {
+  margin-top: 0;
+}
+.PrivacyPolicy .info-company {
+  max-width: none;
+  padding: 0 30px;
+  line-height: 180%;
+}
+.PrivacyPolicy p {
+  padding-left: 23px;
+}
+.PrivacyPolicy ul {
+  padding: 0 0 0 43px;
+  margin: 0;
+}
+.TermsOfUse ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.des,
+.cont {
+  line-height: 18px;
+}
+
+.link-about {
+  max-width: 958px;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.link-bm {
+  margin-top: 30px;
+}
+.link-about li {
+  width: 19.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+.link-about li a {
+  color: #222;
+  display: inline-block;
+  padding-top: 20px;
+  border-top: 3px transparent solid;
+  text-transform: uppercase;
+}
+.link-about li a:visited {
+  color: #808080;
+}
+.link-about li.selected a {
+  border-top-color: #000575;
+  color: #000575;
+  font-weight: 600;
+}
+.link-about li a:hover {
+  color: #000575;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #tabs_containerVT ul {
+    width: 100%;
+  }
+  #s4-bodyContainer {
+    font-size: 16px;
+  }
+  .tabtin font {
+    font-size: 16px !important;
+  }
+  .ImageCaption,
+  .article-content,
+  .article-des,
+  .des,
+  .cont {
+    line-height: 24px;
+  }
+  .ImageCaption {
+    padding-right: 20px;
+  }
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 16px;
+  }
+  .top-ds,
+  .titleAreaBox,
+  .banner,
+  #container,
+  .foot-ds,
+  .searchBox {
+    width: 1170px;
+  }
+  .wrap {
+    width: 1170px;
+  }
+  .footer .wrap,
+  .end-ft .wrap,
+  .version .wrap {
+    width: 1170px;
+  }
+  .mainL,
+  .main-C,
+  .mainCM-C,
+  .ArticleNews {
+    width: 821px;
+    padding-right: 40px;
+  }
+  .divcv .GPH-form-input input {
+    width: 931px;
+  }
+  .cp-table {
+    width: 100%;
+  }
+  body #Table_Pro {
+    margin: 10px auto 0;
+  }
+  .tb-azure {
+    height: 292px;
+    margin-right: 10px;
+  }
+
+  /*-- Other --*/
+  .p-img-soft {
+    background: url("/link/images/win-server.gif") no-repeat;
+    height: 70px;
+  }
+  .p-img-soft img {
+    visibility: hidden;
+  }
+
+  #tabs_containerVT li {
+    padding: 18px 50px 18px 50px;
+  }
+  .Info-product {
+    width: 46%;
+  }
+  /*---------------------------*/
+  .Banner {
+    width: 1170px;
+  }
+  .Banner img {
+    visibility: hidden;
+  }
+  .Exchange-Online {
+    background: url("/PublishingImages/banner/Exchange-Online2015.png")
+      no-repeat;
+  }
+  .Office365 {
+    background: url("/PublishingImages/banner/Office3652015.png") no-repeat;
+  }
+  .Banner.Azure {
+    background: url("/PublishingImages/banner/Azure2015.png") no-repeat;
+  }
+  .Microsoft-Office365 {
+    background: url("/PublishingImages/slider/images/Microsoft-Office365.jpg")
+      no-repeat;
+  }
+  .menu-info li {
+    margin: 0 65px;
+  }
+  .ColL {
+    width: 380px;
+  }
+  .ColR {
+    margin-left: 420px;
+  }
+  .Contact .ItemInput input[type="text"] {
+    width: 366px;
+  }
+  .Contact .ItemInput textarea {
+    width: 786px;
+  }
+  .item-grpProduct {
+    width: 360px;
+    padding-right: 30px;
+  }
+  .GPH-form-mxn {
+    width: 572px;
+  }
+  .GPH-form-input input {
+    width: 355px;
+  }
+  .GPH-form-input .k-widget {
+    width: 367px;
+  }
+  .GPH-form-input textarea {
+    width: 931px;
+  }
+  #mabv {
+    padding-right: 20px;
+  }
+  .GPH-item .ba {
+    padding-right: 40px;
+  }
+  .reWrapper .reModule {
+    display: none;
+  }
+  /**/
+  .news-content {
+    height: 400px;
+  }
+  .CM-nitem .CM-news {
+    margin-left: 50px;
+    width: 335px;
+  }
+}
+
+/*-- info --*/
+.info-company,
+.about-tnsm {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.info h3 {
+  margin-bottom: 15px;
+}
+.map-lh .map-img {
+  overflow: hidden;
+}
+.map-lh .map-img img {
+  margin-top: -10px;
+}
+.info .add {
+  margin-bottom: 20px;
+}
+.map-lh {
+  padding-bottom: 30px;
+}
+
+.info-company ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.article-content .info-company ul li {
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 2%;
+  margin: 20px 0;
+}
+.info-company ul li span {
+  display: block;
+}
+.icon-info {
+  width: 68px;
+  height: 68px;
+  float: left;
+  margin-right: 25px;
+  background: url("../assets/img/remain/vt-sprite.png") no-repeat -42px 0;
+}
+.ic-info02 {
+  background-position: -42px -69px;
+}
+.ic-info03 {
+  background-position: -42px -144px;
+}
+.ic-info04 {
+  background-position: -42px -212px;
+}
+.ic-info05 {
+  background-position: -155px -39px;
+}
+.info-table td:first-child {
+  padding-right: 40px;
+}
+
+.about-tnsm ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tnsm-title {
+  margin: 20px 0;
+}
+.tnsm-title span:first-child {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background: url("../assets/img/remain/vt-sprite.png") no-repeat -229px -80px;
+  margin-right: 20px;
+}
+.tnsm-title label {
+  color: #000575;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 120px;
+}
+.tnsm-cont {
+  padding: 15px 0 15px 42px;
+  margin-left: 15px;
+  border-left: 1px #b1b1b1 dashed;
+}
+.cldv-tb {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.cldv-L,
+.cldv-R {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+.cldv-L {
+  padding-right: 5%;
+}
+.cldv-R {
+  width: 45%;
+  text-align: center;
+}
+.article-content .cldv-R img {
+  max-width: 420px;
+}
+
+.title-tich-hop {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+.about-cscl {
+  margin-top: 40px;
+}
+.about-cscl .tnsm-cont {
+  padding-bottom: 0;
+}
+.about-cscl .tnsm-cont p {
+  display: none;
+}
+.about-cscl li.last .tnsm-cont {
+  display: none;
+}
+.tnsm-title .tit {
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: 500;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 22px;
+  border: 1px #000575 dashed;
+  min-width: 320px;
+  text-align: center;
+  color: #111;
+}
+
+/*** News detail ***********/
+.article-header {
+  background: url("/assets/img/remain/line-pro.gif") repeat-x 0 bottom;
+  padding: 25px 0 30px 0;
+}
+.ArticleInfo .article-header {
+  padding-top: 0;
+}
+.pagecotmoc .article-header {
+  background: none;
+  padding-bottom: 10px;
+}
+.article-header .des .ms-rtestate-field {
+  padding-top: 20px;
+  display: block !important;
+}
+.article-header .des .ms-rtestate-field:empty {
+  padding-top: 0;
+}
+.article-des {
+  padding-top: 20px;
+}
+.article-des p:first-child {
+  margin-top: 0;
+}
+.article-des .RadEditor {
+  width: auto !important;
+}
+.ArticleNews .article-header {
+  padding-top: 0;
+}
+.PagePMBQ .article-des {
+  padding: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.PagePMBQ .article-des:empty {
+  padding-bottom: 0;
+}
+.ArticleNews .article-des {
+  padding-top: 30px;
+}
+.article-content:empty {
+  display: none;
+}
+body .article-des p {
+  margin-bottom: 0;
+}
+.article-header .title {
+  font-size: 16px;
+  background: none;
+  padding: 0;
+  text-transform: none;
+  font-weight: bold;
+}
+.article-header span.date-line {
+  padding-top: 10px;
+  color: #b2b2b2;
+}
+table.image {
+  float: left;
+}
+.image img {
+  width: 240px;
+  margin-right: 20px;
+}
+.ImageCaption,
+.article-content {
+  text-align: justify;
+  line-height: 24px;
+}
+
+.ArticleInfo {
+  padding-top: 30px;
+}
+.ArticleInfo .article-content > h2 {
+  padding-bottom: 15px;
+  margin-top: 0 !important;
+}
+.article-content p:first-child,
+.article-content ul:first-child {
+  margin-top: 0;
+}
+.article-content td {
+  text-align: left;
+}
+.article-ds li {
+  padding: 3px 0;
+}
+.article-content ul li {
+  margin: 12px 0;
+}
+.article-content ul li span,
+.article-content p span,
+.article-content h2 span {
+  font-size: 16px !important;
+}
+.tuyendung h2 {
+  text-decoration: underline;
+}
+.article-content h2 span {
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
+a.bgpm {
+  display: block;
+  margin-top: 30px;
+  color: #333;
+}
+a.bgpm:hover {
+  color: #d00;
+  text-decoration: none;
+}
+.cohoi_tietkiem {
+  margin-bottom: 30px;
+}
+.h3-title {
+  color: #333;
+  font-weight: normal;
+}
+.cohoi_tietkiem .title {
+  border-left: 2px #e6e6e6 solid;
+  margin-top: 10px;
+  margin-left: 6px;
+  padding-left: 20px;
+}
+.cohoi_tietkiem a:link,
+.cohoi_tietkiem a:visited {
+  color: #808080;
+}
+.cohoi_tietkiem a:hover {
+  color: #d00;
+  text-decoration: none;
+}

@@ -70,6 +70,7 @@
       }
       &.commitment-quality {
         & .history-inner-info {
+          margin-bottom: 40px;
           h2 {
             color: #002485;
           }
@@ -92,7 +93,8 @@
         }
       }
       p {
-        padding: 20px 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
         font-size: 16px;
         line-height: 28px;
         @include max(600px) {
@@ -101,6 +103,7 @@
       }
       p > span {
         color: #002485;
+        font-weight: 600;
       }
     }
     &-prove {
@@ -179,7 +182,7 @@
           padding-top: 80px;
           position: relative;
           border-radius: 20px;
-          background: #fff;
+          background: #f1f8ff;
           & .history-text {
             @include flex();
             & .item-title {
@@ -206,7 +209,7 @@
       @include mid-flex-btw();
       padding: 30px;
       border-radius: 20px;
-      background: #fff;
+      background: #f1f8ff;
       & .history-inner-text {
         & .item-title {
           margin-bottom: 10px;
@@ -239,8 +242,11 @@
   }
   &-time {
     padding-bottom: 40px;
-    & .history-inner-info h2 {
-      color: #002485;
+    & .history-inner-info {
+      margin-bottom: 50px;
+      h2 {
+        color: #002485;
+      }
     }
     &-row {
       @include flex();
@@ -422,7 +428,7 @@
     &-box {
       padding: 30px;
       border-radius: 20px;
-      background: #dbeafe;
+      background: #f1f8ff;
       @include mid-flex-btw();
       margin-bottom: 40px;
       @include max(600px) {

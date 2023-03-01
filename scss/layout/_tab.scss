@@ -92,13 +92,9 @@
           transform: scale(1);
           -webkit-transition: 0.5s ease-in-out;
           transition: 0.5s ease-in-out;
-          @include max(1024px) {
-            max-width: none;
-            max-height: none;
-          }
         }
       }
-      &:hover img {
+      &:hover .tablist-reading img{
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
       }

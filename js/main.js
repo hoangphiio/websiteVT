@@ -7,7 +7,6 @@ import tablistModule from "./modules/tablistModule.js";
 import videoModule from "./modules/videoModule.js";
 import dropdownModule from "./modules/dropdownModule.js";
 import scrollModules from "./modules/scrollModules.js";
-import navigationModule from "./modules/navigationModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   popupModule();
@@ -19,5 +18,4 @@ window.addEventListener("DOMContentLoaded", () => {
   videoModule();
   dropdownModule();
   scrollModules();
-  navigationModule();
 });

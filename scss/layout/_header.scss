@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.469rem 0px;
+  padding: 0.709rem 0px;
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.5625rem rgba(0, 0, 0, 0.14221);
@@ -34,10 +34,6 @@
       display: block;
       object-fit: cover;
     }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
   }
   &-filter {
     @include flex();
@@ -47,7 +43,7 @@
       gap: 1.875rem;
       padding-top: 1rem;
     }
-    @include max(40rem) {
+    @include max(580px) {
       flex-direction: column;
       gap: 0.75rem;
     }
@@ -268,21 +264,23 @@
     &-language {
       padding: 1.25rem 0;
       margin-right: 16px;
-
       @include max(68.75rem) {
         margin: unset;
         width: 5%;
       }
-      @include max(40rem) {
+      @include max(580px) {
         width: 10%;
       }
       a {
         max-width: 1.875rem;
         display: block;
+        @include max(580px) {
+          max-width: 100%;
+        }
       }
     }
     &-search {
-      padding: 0 30px;
+      padding: 0 21px;
       padding-right: 25px;
       position: relative;
       @include max(68.75rem) {
@@ -290,7 +288,7 @@
         padding: 0;
         text-align: right;
       }
-      @include max(40rem) {
+      @include max(580px) {
         text-align: center;
       }
       &-form {
@@ -343,22 +341,13 @@
     &-wrapper {
       &.searchToggle i {
         cursor: pointer;
+        padding: 9px;
+        background: #f3f6ff;
+        border-radius: 50%;
         transition: all 0.3s ease;
-      }
-      &.searchToggle i.close {
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 2px;
-        font-size: 0.75rem;
-      }
-      &.searchToggle.active i.close {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      &.searchToggle.active i.search {
-        opacity: 0;
-        pointer-events: none;
+        &::before {
+          color: #002485;
+        }
       }
       &.searchToggle.active ~ .header-navbar-field {
         opacity: 1;
@@ -368,47 +357,35 @@
     &-field {
       position: absolute;
       opacity: 0;
-      top: 2.8125rem;
-      right: 1.5625rem;
-      width: 18.75rem;
-      height: 3.125rem;
-      display: flex;
+      top: 40px;
+      right: -192px;
+      width: 352px;
+      height: 40px;
+      z-index: 2;
+      @include flex();
       align-items: center;
-      background-color: $color-first;
-      padding: 0.1875rem;
-      border-radius: 0.25rem;
-      box-shadow: 0.125rem 0.1875rem 0.625rem #e5e5e5;
+      border-radius: 20px;
       transition: all 0.3s ease;
-      @include max(68.75rem) {
-        right: -1.375rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26);
+      @include max(580px) {
         width: 100%;
         top: 30px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        right: 26px;
-        top: -0.25rem;
-        height: 0.75rem;
-        width: 0.75rem;
-        background-color: $color-first;
-        transform: rotate(-45deg);
-        z-index: -1;
-        @include max(40rem) {
-          display: none;
-        }
+        right: 0;
+        left: 0;
       }
       input {
         width: 100%;
         height: 100%;
         border: 0;
         outline: 0;
-        padding: 0 2.8125rem 0 0.9375rem;
-        background-color: #f5f5f5;
+        padding: 6px 20px;
+        border-radius: 20px;
+        background: #fff;
       }
       i {
         position: absolute;
         right: 1.5rem;
+        cursor: pointer;
       }
     }
     &-contact {
@@ -417,7 +394,7 @@
         text-align: center;
         width: 25%;
       }
-      @include max(40rem) {
+      @include max(580px) {
         width: 100%;
         margin-bottom: 20px;
       }
