@@ -441,7 +441,7 @@
 
 /*** News detail ***********/
 .article-header {
-  background: url("/assets/img/remain/line-pro.gif") repeat-x 0 bottom;
+  background: url("../assets/img/remain/line-pro.gif") repeat-x 0 bottom;
   padding: 25px 0 30px 0;
 }
 .ArticleInfo .article-header {
