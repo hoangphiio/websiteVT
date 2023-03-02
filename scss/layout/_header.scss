@@ -111,7 +111,7 @@
         width: 250px;
         background: #fff;
         left: 0;
-        top: 46px;
+        top: 45px;
         margin: 0;
         padding: 20px;
         border-top: 4px solid #002485;
@@ -264,6 +264,7 @@
     &-language {
       padding: 1.25rem 0;
       margin-right: 16px;
+      display: none;
       @include max(68.75rem) {
         margin: unset;
         width: 5%;

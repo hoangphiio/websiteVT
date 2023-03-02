@@ -8,7 +8,7 @@
   }
   &-inner {
     &-col {
-      @include max(1023px) {
+      @include max(1023px) 
         width: 100%;
       }
       &:nth-child(1) {
@@ -55,12 +55,13 @@
     &-right {
       padding-top: 150px;
       @include max(1100px) {
-        padding-top: 60px;
+        padding-top: 100px;
       }
       @include max(600px) {
         padding-top: 0;
       }
       &.vision-mission {
+        padding-top: 30px;
         & .history-inner-info {
           margin-bottom: 95px;
           h2 {
@@ -110,6 +111,9 @@
       position: relative;
       & .prove-img {
         position: relative;
+        img {
+          max-height: 195px;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -149,6 +153,11 @@
         }
       }
     }
+    &-swiper {
+      & .swiper-wrapper {
+        height: auto;
+      }
+    }
     &-pagination {
       bottom: 0 !important;
     }
@@ -169,13 +178,23 @@
       @include flex();
       align-items: center;
       margin-bottom: 40px;
+      @include max(700px) {
+        flex-wrap: wrap;
+      }
       & .history-introduce {
         position: relative;
         &:nth-child(1) {
           margin-right: 20px;
+          @include max(700px) {
+            margin-right: 0;
+            margin-bottom: 65px;
+          }
         }
         &:nth-child(2) {
           margin-left: 20px;
+          @include max(700px) {
+            margin-left: 0;
+          }
         }
         & .history-strategy {
           padding: 30px;
@@ -210,7 +229,18 @@
       padding: 30px;
       border-radius: 20px;
       background: #f1f8ff;
+      @include max(700px) {
+        flex-wrap: wrap;
+      }
       & .history-inner-text {
+        @include max(700px) {
+          width: 100%;
+        }
+        &:nth-child(1) {
+          @include max(700px) {
+            margin-bottom: 20px;
+          }
+        }
         & .item-title {
           margin-bottom: 10px;
           h4 {
@@ -255,6 +285,41 @@
       }
       &.border {
         padding-top: 0;
+        &:nth-child(3) {
+          & div.history-time-form:nth-child(2) {
+            &::after {
+              background-color: #00c86b;
+            }
+          }
+        }
+        &:nth-child(4) {
+          & div.history-time-form:nth-child(2) {
+            &::after {
+              background-color: $color-four;
+            }
+          }
+        }
+        &:nth-child(6) {
+          & div.history-time-form:nth-child(2) {
+            &::after {
+              background-color: #00c86b;
+            }
+          }
+        }
+        &:nth-child(8) {
+          & div.history-time-form:nth-child(2) {
+            &::after {
+              background-color: $color-four;
+            }
+          }
+        }
+        &:nth-child(9) {
+          & div.history-time-form:nth-child(2) {
+            &::after {
+              background-color: #00c86b;
+            }
+          }
+        }
         & .history-time-form:nth-child(1) {
           padding-top: 30px;
         }
@@ -263,8 +328,22 @@
           &::before {
             height: 100%;
           }
-          &::after {
-            display: none;
+        }
+        &:nth-child(even) {
+          & .history-time-form:nth-child(2) {
+            &::after {
+              content: "";
+              width: 14px;
+              height: 14px;
+              top: -8px;
+              right: unset;
+              left: -6px;
+              z-index: 2;
+              border: 0;
+              position: absolute;
+              border-radius: 50%;
+              background-color: #69a1ff;
+            }
           }
         }
         &:nth-child(odd) {
@@ -277,36 +356,28 @@
               right: 0;
               left: unset;
             }
+            &::after {
+              content: "";
+              width: 14px;
+              height: 14px;
+              top: -8px;
+              right: -6px;
+              left: unset;
+              z-index: 2;
+              border: 0;
+              position: absolute;
+              border-radius: 50%;
+              background-color: #69a1ff;
+            }
           }
           & div.history-time-year {
             &::before {
               left: 89px;
-              right: unset;
             }
             h3 {
               left: 0;
               right: unset;
             }
-          }
-        }
-        &:nth-child(3) {
-          div.history-time-year::before {
-            background-color: #ffc107;
-          }
-        }
-        &:nth-child(4) {
-          div.history-time-year::before {
-            background-color: #428dff;
-          }
-        }
-        &:nth-child(6) {
-          div.history-time-year::before {
-            background-color: #428dff;
-          }
-        }
-        &:nth-child(7) {
-          div.history-time-year::before {
-            background-color: #ffc107;
           }
         }
         &:nth-child(9) {
@@ -362,6 +433,9 @@
         .history-time-img {
           width: 25%;
           margin-bottom: 70px;
+          img {
+            height: auto;
+          }
         }
         .history-time-year {
           h3 {
@@ -382,16 +456,18 @@
     }
     &-year {
       width: 100%;
-      &::before {
-        content: "";
-        width: 14px;
-        height: 14px;
-        top: 7px;
-        right: -8px;
-        z-index: 2;
-        position: absolute;
-        border-radius: 50%;
-        background-color: #69a1ff;
+      &:first-child {
+        &::before {
+          content: "";
+          width: 14px;
+          height: 14px;
+          top: 7px;
+          right: -8px;
+          z-index: 2;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #69a1ff;
+        }
       }
       h3 {
         font-size: 30px;
@@ -481,6 +557,11 @@
         @include flex();
         align-items: center;
         transform: rotate(45deg);
+      }
+      &-img {
+        img {
+          height: auto;
+        }
       }
       h3 {
         font-weight: 700;

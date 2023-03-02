@@ -69,7 +69,7 @@ export default function swiperModule() {
     },
   });
 
-  const swiperHistory = new Swiper(".history-inner-swipper .swiper", {
+  const swiperHistory = new Swiper(".history-inner-swiper .swiper", {
     spaceBetween: 30,
     loop: true,
     observer: true,
