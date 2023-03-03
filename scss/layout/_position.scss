@@ -45,23 +45,23 @@
 .location {
   &-wrap {
     margin-top: 120px;
-    @include max(500px){
+    @include max(500px) {
       margin-top: 70px;
     }
   }
   &-title {
+    margin-bottom: 50px;
     h3 {
       text-align: center;
       color: #1d3a89;
       font-size: 28px;
       text-transform: uppercase;
-      @include max(500px){
+      @include max(500px) {
         font-size: 20px;
       }
     }
   }
   &-inner {
-    margin-top: 50px;
     padding-bottom: 100px;
     @include max(1024px) {
       padding-bottom: 50px;
@@ -81,6 +81,7 @@
         background-color: #fff !important;
       }
       &.form-01 {
+        background-color: #fff8e2;
         &.hvr-reveal:before {
           border-color: #ffc107;
         }
@@ -90,6 +91,7 @@
         }
       }
       &.form-02 {
+        background-color: #f1f4ff;
         &.hvr-reveal:before {
           border-color: #415086;
         }
@@ -99,6 +101,7 @@
         }
       }
       &.form-03 {
+        background-color: #e6fbff;
         &.hvr-reveal:before {
           border-color: #28b0ff;
         }
@@ -108,6 +111,7 @@
         }
       }
       &.form-04 {
+        background-color: #71f0b53d;
         &:hover .location-list > a > h3 > span {
           color: #00c86b;
         }
@@ -162,18 +166,6 @@
           }
         }
       }
-      &:nth-child(1) {
-        background: #fff8e2;
-      }
-      &:nth-child(2) {
-        background: #f1f4ff;
-      }
-      &:nth-child(3) {
-        background: #e6fbff;
-      }
-      &:nth-child(4) {
-        background: #71f0b53d;
-      }
     }
     &-box {
       &:nth-child(1) {
@@ -185,7 +177,7 @@
 .detail {
   &-inner {
     padding-top: 130px;
-    @include max(500px){
+    @include max(500px) {
       padding-top: 100px;
     }
     &-box {
@@ -223,7 +215,7 @@
         }
         > p {
           font-size: 20px;
-          padding-bottom: 20px;
+          padding-bottom: 40px;
           @include max(500px) {
             font-size: 16px;
           }
@@ -253,12 +245,29 @@
         }
         &-title {
           width: 15%;
+          margin-right: 35px;
           h4 {
             font-size: 18px;
           }
           @include max(800px) {
             width: 100%;
             padding-bottom: 20px;
+          }
+        }
+        &-table {
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          td {
+            padding: 12px;
+            border: 1px solid #ebebeb;
+          }
+          tr {
+            font-size: 14px;
+          }
+          th {
+            padding: 12px;
+            border: 1px solid #ebebeb;
           }
         }
         &-jd {
@@ -270,7 +279,7 @@
           }
           > li {
             position: relative;
-            line-height: 20px;
+            line-height: 25px;
             font-size: 16px;
             font-weight: 500;
             color: #262626;
@@ -292,13 +301,10 @@
             }
           }
         }
-        &:nth-child(5) {
-          & .detail-box-jd {
-            li {
-              &::before {
-                display: none;
-              }
-            }
+        &:nth-child(4) {
+          display: block;
+          & .detail-box-title {
+            margin-bottom: 20px;
           }
         }
         &:nth-child(6) {
@@ -372,7 +378,7 @@
                 border-radius: 5px;
                 position: absolute;
                 cursor: pointer;
-                @include max(500px){
+                @include max(500px) {
                   font-size: 14px;
                 }
               }

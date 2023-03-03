@@ -8,7 +8,7 @@
   }
   &-inner {
     &-col {
-      @include max(1023px){
+      @include max(1023px) {
         width: 100%;
       }
       &:nth-child(1) {
@@ -348,13 +348,31 @@
         }
         &:nth-child(odd) {
           flex-direction: row-reverse;
+          @include max(750px) {
+            flex-direction: row;
+          }
           & .history-time-form:nth-child(2) {
             width: 100%;
             padding-right: 50px;
             padding-left: 0;
+            @include max(750px) {
+              width: 88%;
+              padding-right: 0;
+              padding-left: 50px;
+              border-top: 2px dotted #a9a9a9;
+            }
+            @include max(600px) {
+              width: 100%;
+              padding-left: 0;
+              border-top: 0;
+            }
             &::before {
               right: 0;
               left: unset;
+              @include max(750px) {
+                right: unset;
+                left: 0;
+              }
             }
             &::after {
               content: "";
@@ -368,6 +386,13 @@
               position: absolute;
               border-radius: 50%;
               background-color: #69a1ff;
+              @include max(750px) {
+                right: unset;
+                left: -6px;
+              }
+              @include max(600px) {
+                display: none;
+              }
             }
           }
           & div.history-time-year {
@@ -377,6 +402,9 @@
             h3 {
               left: 0;
               right: unset;
+              @include max(750px) {
+                left: -88px;
+              }
             }
           }
         }
@@ -396,10 +424,8 @@
       position: relative;
       &:nth-child(1) {
         width: 12%;
-        @include max(600px) {
-          width: 100%;
-          @include flex();
-          align-items: center;
+        @include max(680px) {
+          width: 15%;
         }
       }
       &:nth-child(2) {
@@ -408,6 +434,15 @@
         flex-wrap: wrap;
         padding-left: 50px;
         border-bottom: 2px dotted #a9a9a9;
+        @include max(680px) {
+          padding-left: 30px;
+          flex-direction: column;
+        }
+        @include max(600px) {
+          width: 100%;
+          padding-left: 0;
+          border-bottom: 0;
+        }
         &::before {
           content: "";
           height: 94%;
@@ -416,6 +451,12 @@
           bottom: 0;
           z-index: 1;
           border-left: 2px dotted #a9a9a9;
+          @include max(680px) {
+            height: 98%;
+          }
+          @include max(600px) {
+            display: none;
+          }
         }
         &::after {
           content: "";
@@ -424,15 +465,33 @@
           top: 13px;
           left: -14px;
           border-top: 2px dotted #a9a9a9;
+          @include max(600px) {
+            display: none;
+          }
         }
         .history-time-build {
           width: 75%;
           padding-right: 30px;
           margin-bottom: 70px;
+          @include max(680px) {
+            width: 100%;
+            padding-right: 0;
+          }
+          @include max(600px) {
+            margin-bottom: 40px;
+          }
         }
         .history-time-img {
           width: 25%;
           margin-bottom: 70px;
+          @include max(680px) {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+          }
+          @include max(600px) {
+            margin-bottom: 50px;
+          }
           img {
             height: auto;
           }
@@ -444,6 +503,13 @@
             right: 0;
             padding-left: 2px;
             background: #fff;
+            @include max(750px) {
+              left: -90px;
+            }
+            @include max(600px) {
+              left: 0;
+              bottom: -50px;
+            }
           }
           &::before {
             top: unset;
@@ -467,6 +533,9 @@
           position: absolute;
           border-radius: 50%;
           background-color: #69a1ff;
+          @include max(600px) {
+            display: none;
+          }
         }
       }
       h3 {
@@ -474,6 +543,10 @@
         color: #bababa;
         font-weight: 700;
         line-height: 20px;
+        @include max(600px) {
+          line-height: normal;
+          margin-bottom: 20px;
+        }
       }
       @include max(600px) {
         padding-bottom: 0;
