@@ -385,7 +385,7 @@
         &.box-02 {
           display: block;
           & .detail-box-table {
-            @include max(600px){
+            @include max(600px) {
               gap: 20px;
               flex-direction: column;
             }
@@ -525,6 +525,7 @@
                   position: relative;
                   border-radius: 8px;
                   padding: 20px;
+                  margin-top: 0;
                   background-color: #fff;
                   p:nth-child(1) {
                     font-weight: 500;

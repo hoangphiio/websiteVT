@@ -3431,6 +3431,7 @@ input::-webkit-input-placeholder {
             position: relative;
             border-radius: 8px;
             padding: 20px;
+            margin-top: 0;
             background-color: #fff; }
             .detail-inner-box .detail-form-button .popup-box .content-box p:nth-child(1) {
               font-weight: 500;
