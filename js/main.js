@@ -7,6 +7,7 @@ import tablistModule from "./modules/tablistModule.js";
 import videoModule from "./modules/videoModule.js";
 import dropdownModule from "./modules/dropdownModule.js";
 import scrollModules from "./modules/scrollModules.js";
+import showhideModule from "./modules/showhideModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   popupModule();
@@ -18,4 +19,5 @@ window.addEventListener("DOMContentLoaded", () => {
   videoModule();
   dropdownModule();
   scrollModules();
+  showhideModule();
 });

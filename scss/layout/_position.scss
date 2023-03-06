@@ -63,12 +63,15 @@
   }
   &-inner {
     padding-bottom: 100px;
-    @include max(1024px) {
-      padding-bottom: 50px;
-    }
     @include flex();
     flex-wrap: wrap;
     justify-content: space-between;
+    @include max(1024px) {
+      padding-bottom: 50px;
+    }
+    &.hidden {
+      padding-bottom: 50px;
+    }
     &-column {
       width: calc(50% - 15px);
       padding: 25px;
@@ -167,8 +170,39 @@
         }
       }
     }
-    &-box {
-      &:nth-child(1) {
+  }
+  & .location-button {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 16px;
+      color: #8e8e8e;
+      font-style: italic;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .scroll-prompt {
+      .scroll-prompt-arrow-container {
+        animation-name: bounce;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+      .scroll-prompt-arrow {
+        animation-name: opacity;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+      .scroll-prompt-arrow:last-child {
+        animation-direction: reverse;
+        margin-top: -6px;
+      }
+      .scroll-prompt-arrow > div {
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border-right: 1px solid #8e8e8e;
+        border-bottom: 1px solid #8e8e8e;
+        transform: rotate(45deg) translateZ(1px);
       }
     }
   }
@@ -256,18 +290,47 @@
         }
         &-table {
           width: 100%;
-          table-layout: fixed;
-          border-collapse: collapse;
-          td {
-            padding: 12px;
-            border: 1px solid #ebebeb;
-          }
-          tr {
-            font-size: 14px;
-          }
-          th {
-            padding: 12px;
-            border: 1px solid #ebebeb;
+          @include flex();
+          padding: 5px;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+          & .list-table {
+            width: 33.3333%;
+            height: auto;
+            li {
+              position: relative;
+              &:not(:first-child) {
+                margin: 20px;
+                margin-left: 50px;
+                &::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  display: block;
+                  position: absolute;
+                  left: -25px;
+                  top: 6px;
+                  background-image: url(../assets/img/tuyendung/position-dot.svg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                }
+              }
+              &:first-child {
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                color: $color-first;
+                border-radius: 5px;
+                padding: 20px;
+                background-color: #eef6ff;
+              }
+            }
+            &:nth-child(2) {
+              padding-left: 5px;
+              padding-right: 5px;
+              box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+            }
           }
         }
         &-jd {
@@ -303,7 +366,42 @@
         }
         &:nth-child(4) {
           display: block;
+          & .detail-box-table {
+            @include max(768px) {
+              gap: 20px;
+              flex-direction: column;
+            }
+            & .list-table {
+              @include max(768px) {
+                width: 100%;
+              }
+            }
+          }
           & .detail-box-title {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        &.box-02 {
+          display: block;
+          & .detail-box-table {
+            @include max(600px){
+              gap: 20px~;
+              flex-direction: column;
+            }
+          }
+          & .list-table {
+            width: 50%;
+            @include max(600px) {
+              width: 100%;
+            }
+            &:nth-child(2) {
+              padding-right: 0;
+              box-shadow: none;
+            }
+          }
+          & .detail-box-title {
+            width: 100%;
             margin-bottom: 20px;
           }
         }

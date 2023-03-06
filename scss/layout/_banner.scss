@@ -1,8 +1,18 @@
 .banner {
   &-wrap {
     margin-top: 70px;
+    @include max(1100px) {
+      margin-top: 80px;
+    }
   }
   &-inner {
+    &.product-banner {
+      & .banner-content-img {
+        @include max(600px) {
+          padding-top: calc((740 / 1728) * 140%);
+        }
+      }
+    }
     & .slide-two {
       & .banner-list {
         height: 100%;
