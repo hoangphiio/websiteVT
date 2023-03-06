@@ -89,15 +89,6 @@
           border-bottom: 2px dashed #a0a0a0;
           border-bottom-left-radius: 12px;
           border-top-left-radius: 16px;
-          @include max(1100px) {
-            height: 93%;
-          }
-          @include max(1083px) {
-            height: 97%;
-          }
-          @include max(1023px) {
-            display: none;
-          }
         }
         &::after {
           content: "";
@@ -207,15 +198,6 @@
         border-right: 2px dashed rgb(160, 160, 160);
         border-bottom: 2px dashed rgb(160, 160, 160);
         border-bottom-right-radius: 16px;
-        @include max(1100px) {
-          height: 93%;
-        }
-        @include max(1097px) {
-          height: 97%;
-        }
-        @include max(1023px) {
-          display: none;
-        }
       }
     }
     &-col:nth-child(even) {
