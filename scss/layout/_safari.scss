@@ -1,6 +1,24 @@
 .k-safari {
   img {
     height: auto;
-    object-fit: none;
+  }
+  .header-navbar-link {
+    & .item {
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+    }
+  }
+  .solution-inner-col {
+    & img {
+      max-height: unset;
+    }
+  }
+  .partner-column-logo {
+    li {
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+    }
   }
 }

@@ -103,6 +103,9 @@
     @include max(600px) {
       margin-bottom: 50px;
     }
+    &[data-aos^="fade"][data-aos^="fade"].aos-animate{
+      transform: unset;
+    }
     &:nth-child(odd) {
       @include max(882px) {
         flex-direction: column;

@@ -2,6 +2,10 @@
   margin-top: 100px;
 }
 
+.main .main{
+  margin-top: 0;
+}
+
 .main .main img {
   width: unset !important;
   height: unset !important;
