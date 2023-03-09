@@ -240,15 +240,6 @@
       li a {
         font-size: 14px;
       }
-      li > a::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 40px;
-        background: transparent;
-        bottom: -38px;
-        left: 0;
-      }
       li:nth-child(2) {
         > ul > li {
           @include flex();
@@ -371,7 +362,7 @@
       right: -154px;
       width: 352px;
       height: 40px;
-      z-index: 2;
+      z-index: -1;
       @include flex();
       align-items: center;
       border-radius: 20px;
@@ -389,6 +380,7 @@
         border: 0;
         outline: 0;
         padding: 6px 20px;
+        padding-right: 45px;
         border-radius: 20px;
         background: #fff;
       }

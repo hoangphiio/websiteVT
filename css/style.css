@@ -812,14 +812,6 @@ table {
         padding-bottom: 0; }
     .header-navbar-link li a {
       font-size: 14px; }
-    .header-navbar-link li > a::after {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 40px;
-      background: transparent;
-      bottom: -38px;
-      left: 0; }
     .header-navbar-link li:nth-child(2) > ul > li {
       display: -webkit-flex;
       display: -moz-flex;
@@ -923,7 +915,7 @@ table {
     right: -154px;
     width: 352px;
     height: 40px;
-    z-index: 2;
+    z-index: -1;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -945,6 +937,7 @@ table {
       border: 0;
       outline: 0;
       padding: 6px 20px;
+      padding-right: 45px;
       border-radius: 20px;
       background: #fff; }
     .header-navbar-field i {
@@ -1871,6 +1864,10 @@ table {
       right: 155px;
       top: 70px;
       z-index: 998; }
+      @media screen and (max-width: 1023px) {
+        .feedback-inner-box .solution-inner-title {
+          position: static;
+          padding-bottom: 30px; } }
       .feedback-inner-box .solution-inner-title h2 {
         padding-bottom: 0; }
     .feedback-inner-box .swiper .swiper-wrapper {
@@ -1880,6 +1877,10 @@ table {
       text-align: center;
       bottom: 70px;
       left: 200px; }
+      @media screen and (max-width: 1023px) {
+        .feedback-inner-box .swiper .feedback-pagination {
+          position: static;
+          padding-top: 20px; } }
     .feedback-inner-box .swiper .feedback-pagination .swiper-pagination-bullet {
       width: 0.9375rem;
       height: 0.9375rem; }
@@ -1890,8 +1891,14 @@ table {
     display: -o-flex;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 1023px) {
+      .feedback-inner-card {
+        flex-direction: column-reverse; } }
     .feedback-inner-card .feedback-left {
       width: 35%; }
+      @media screen and (max-width: 1023px) {
+        .feedback-inner-card .feedback-left {
+          width: 50%; } }
       .feedback-inner-card .feedback-left .feedback-img {
         margin-bottom: 15px; }
       .feedback-inner-card .feedback-left .feedback-customer {
@@ -1903,6 +1910,9 @@ table {
           font-size: 14px; }
     .feedback-inner-card .feedback-right {
       width: 65%; }
+      @media screen and (max-width: 1023px) {
+        .feedback-inner-card .feedback-right {
+          width: 100%; } }
       .feedback-inner-card .feedback-right .feedback-content {
         margin-left: 30px; }
         .feedback-inner-card .feedback-right .feedback-content .feedback-comma img {
@@ -1916,6 +1926,10 @@ table {
             max-width: 573px;
             margin: auto;
             line-height: 30px; }
+            @media screen and (max-width: 1023px) {
+              .feedback-inner-card .feedback-right .feedback-content .feedback-text p {
+                max-width: unset;
+                padding: 20px 0; } }
 
 .footer {
   background: #fafafa; }
@@ -3132,6 +3146,8 @@ input::-webkit-input-placeholder {
 .location .location-button {
   width: 100%;
   text-align: center; }
+  .location .location-button.hidden-btn {
+    display: none; }
   .location .location-button button {
     font-size: 16px;
     color: #8e8e8e;

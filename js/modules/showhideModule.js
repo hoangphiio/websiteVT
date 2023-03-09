@@ -1,12 +1,7 @@
 export default function showhideModule() {
   $(document).ready(function () {
-    $(".button-change").click(function () {
-      $(this).text(function (i, v) {
-        return v === "Xem thêm" ? "" : "";
-      });
-    });
-
     $("#show-hidden-menu").click(function () {
+      $('.location-button').addClass('hidden-btn');
       $(".hidden").slideToggle("fast");
     });
   });
